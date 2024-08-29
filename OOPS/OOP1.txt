@@ -35,3 +35,4 @@ Three categories of class members
 − Public
 • Member is accessible outside the class
 − Protected
+• Member can be accessed by child class and acessiable by own also.
