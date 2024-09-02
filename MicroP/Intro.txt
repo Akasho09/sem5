@@ -1,0 +1,9 @@
+Low level languages: Machine readable
+1. Machine language  --> 0101000101
+2. Assembly language --> 0101000101=ADD -- combo of 01 and english words
+Assembly language --ASSEMBLER -- Machine language
+
+High level language : english
+e.g : c++,java etc
+High level language--INTERPRETER(line by line) or COMPILER (whole) --Machine language
+
