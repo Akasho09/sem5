@@ -3,6 +3,9 @@
 #include <string>
 using namespace std;
 
+// what is friend function
+// A friend function in C++ is a non-member function of a class that has access to its private and protected members.
+
 class car{
 
 public: 
