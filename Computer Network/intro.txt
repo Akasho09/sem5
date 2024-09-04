@@ -1,0 +1,96 @@
+--"Characterstics of effective communication" :
+1. Delivery
+2. Accuracy
+3. Timeliness
+4. Jitter: Variation in the packet arrival time
+
+"Components of a data communication system" :
+1. Message
+2. Sender
+3. Receiver
+4. Transmission medium
+5. Protocol
+
+"Topology" :
+1. Mesh
+2. Star
+3. Bus
+4. Ring
+
+"NETWORKS" :
+# A network is a set of devices (often referred to as nodes)
+# connected by communication links.
+"Categories of Networks "
+1. Local Area Networks (LANs)
+#  Short distances
+#  Designed to provide local interconnectivity
+2.  Wide Area Networks (WANs)
+#  Long distances
+#  Provide connectivity over large areas
+3. Metropolitan Area Networks (MANs)
+#  Provide connectivity over areas such as a city, a campus
+
+"protocol" :
+# A protocol is synonymous with rule. It consists of a set of
+# rules that govern data communications.
+
+"Elements of a Protocol": 
+1. Syntax
+#  Structure or format of the data
+#  Indicates how to read the bits
+2. Semantics
+#  Interprets the meaning of the bits
+#  Knows which fields define what action
+3. Timing
+#  When data should be sent and what
+#  Speed at which data should be sent or speed at which it is being
+# received.
+
+--"Internet"  : 
+# Collection of connected computers.
+--"IP ADDRESS:" 
+# assigned to a device connected to a computer network that uses the Internet Protocol for communication
+#  curl ifconfig.me -s
+--"PORTS" : 
+#  a port or port number is a number assigned to uniquely identify a connection endpoint and to direct data to a specific service.
+ ~ 2^16 
+20	File Transfer Protocol (FTP) Data Transfer
+21	File Transfer Protocol (FTP) Command Control
+22	Secure Shell (SSH) Secure Login
+23	Telnet remote login service, unencrypted text messages
+25	Simple Mail Transfer Protocol (SMTP) email delivery
+53	Domain Name System (DNS) service
+67, 68	Dynamic Host Configuration Protocol (DHCP)
+80	Hypertext Transfer Protocol (HTTP) used in the World Wide Web
+110	Post Office Protocol (POP3)
+119	Network News Transfer Protocol (NNTP)
+123	Network Time Protocol (NTP)
+143	Internet Message Access Protocol (IMAP) Management of digital mail
+161	Simple Network Management Protocol (SNMP)
+194	Internet Relay Chat (IRC)
+443	HTTP Secure (HTTPS) HTTP over TLS/SSL
+546, 547	DHCPv6 IPv6 version of DHCP
+'mongoD' : 27017
+'sql' : 1433
+#(0-1023 =>reserved 
+# rest for applications.
+
+
+--"OSI MODEL" :->
+# 7 layers
+1. Application 
+2. Presentation.
+3. Session
+4. Transport
+5. Network
+6. Data Link
+7. Physical Layer
+
+
+"TCP/IP MODEL":  Transmission Control Protocol / Internet Protocol
+# 5 layers
+1. Application- (1,2,3 merged into 1).
+2. Transport.
+3. Network.
+4. Data Link
+5. Physical Layer

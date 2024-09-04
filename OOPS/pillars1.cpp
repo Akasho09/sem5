@@ -1,9 +1,3 @@
-/* Encapsulation in C++ is defined as the wrapping up of data and information in a single unit.
-advantages : 1.Data Protection : Encapsulation protects the internal state of an object by keeping its data members private. 
-Access to and modification of these data members is restricted to the class’s public methods, ensuring controlled and secure data manipulation.
- 2.information hiding : Encapsulation hides the internal implementation details of a class from external code. Only the public interface of the class is accessible,
-  providing abstraction and simplifying the usage of the class while allowing the internal implementation to be modified without impacting external code
-*/
 #include <iostream>
 #include <string>
 using namespace std;
@@ -73,7 +67,6 @@ void ambiguity(){
     cout << "ambiguity millionare \n";
 }
 };
-
 //inheritance by public 
 /* if inherited publicly=>  public data members of parent will be public in child , private will be NOT ACESSABLE and protecetd will be protected.
 if inherited privately => public--private , protected -- private and private --NOT ACESSABLE.

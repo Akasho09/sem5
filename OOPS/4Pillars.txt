@@ -1,0 +1,76 @@
+1."Encapsulation" : 
+in C++ is defined as the wrapping up of data and information in a single unit.
+"advantages" :->
+1. Data Protection : 
+Encapsulation protects the internal state of an object by keeping its data members private. 
+Access to and modification of these data members is restricted to the class's public methods, ensuring controlled and secure data manipulation.
+2. information hiding : 
+Encapsulation hides the internal implementation details of a class from external code. Only the public interface of the class is accessible,
+providing abstraction and simplifying the usage of the class while allowing the internal implementation to be modified without impacting external code
+
+2."inheritance" :
+# if inherited publicly=>  public data members of parent will be public in child , private will be NOT ACESSABLE and protecetd will be protected.
+# if inherited privately => public--private , protected -- private and private --NOT ACESSABLE.
+# if inherited protected => public--protected , protected -- protected and private --NOT ACESSABLE.
+
+3."Polymorphism" :
+Polymorphism means "many forms", and it occurs when we have many 
+classes that are related to each other by inheritance.
+"Types of Polymorphism"
+1. "Compile-time Polymorphism "
+Compile-time polymorphism, also known as static polymorphism, 
+is a type of polymorphism that is resolved during the compilation of the program rather than at runtime.
+ -- This type of polymorphism is achieved by function overloading or operator overloading.
+" a). Function Overloading :"
+When there are multiple functions with the same name but different parameters, then the functions are said to be overloaded.
+" b). OPERATOR OVERLOADING "
+C++ has the ability to provide the operators with a special meaning for a data type, this ability is known as operator overloading.
+"Operators that cant be overloaded:"
+Operators that have been assigned tasks that are achieved at runtime and not compile time can be overloaded ,as it may lead to inconsistency.
+1. Membership operator (.),
+2. pointer to member operator (.*),
+3. scope resolution operator (::),
+4. Ternary or conditional operator (?:),
+5. sizeof operator (sizeof). :  
+This is evaluated by the compiler and cannot be evaluated during runtime.
+The proper incrementing of a pointer in an array of objects relies on the sizeof operator implicitly.
+Altering its meaning using overloading would cause a fundamental part of the language to collapse.
+
+"We can overload"
+Binary Arithmetic	+, -, *, /, %
+Unary Arithmetic 	+, -, ++, —
+Assignment	=, +=,*=, /=,-=, %=
+Bitwise	  & , | , << , >> , ~ , ^
+De-referencing	(->)
+Dynamic memory allocation,De-allocation  New, delete
+Subscript	[ ]
+Function call 	()
+Logical 	&,||, !
+Relational	>, < , = =, <=, >=
+
+# Unary operators 
+# can be overloaded by 
+1. Member function:
+takes NO expilicit argument and returns NO explicit argument.
+2. Friend Function:
+takes ONE REFRENCE argument.
+
+# Binary Operators
+# can be overloaded by 
+1. Member function:
+takes ONE expilicit argument and LHS must be object of relevent class.
+2. Friend Function:
+takes TWO explicit argument.
+
+"Operators where friend Function cannot be used for overloading :"
+Assignment operator (=),
+Subscript op ([]),
+Function call op (()),
+class member acess op (->)
+
+# For operator overloading to work, at least one of the operands must be a user-defined class object.
+2.  Runtime Polymorphism:
+
+
+4."abstraction" 
+implementation hiding

@@ -1,6 +1,4 @@
-// Polymorphism
-// Polymorphism means "many forms", and it occurs when we have many 
-// classes that are related to each other by inheritance.
+//Polymorphism
 #include <iostream>
 using namespace std;
 
@@ -60,8 +58,6 @@ cout <<"i am bracket " <<this->a <<endl;
 //  cout<<this->a-1 <<endl;
 // }
 };
-
-//abstraction = implementation hiding
 
 int main() {
   Animal myAnimal;

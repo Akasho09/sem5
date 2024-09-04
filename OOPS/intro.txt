@@ -1,4 +1,4 @@
-Programming paradigm:
+"Programming paradigm:" 
 Programming paradigm is an approach to solve problem using some programming language or
 also we can say it is a method to solve a problem using tools and techniques that are available to us following some approach.
 types : 
@@ -15,21 +15,21 @@ It performs step by step task by changing state.
 divided as 
 Logic, Functional, Database.
 
----> OOP : Object-Oriented Programming, as name suggests, is a different approach to programming that brings together data and functions that execute on them.
+---> "OOP" : Object-Oriented Programming, as name suggests, is a different approach to programming that brings together data and functions that execute on them.
  It basically supports encapsulation, abstraction, inheritance, polymorphism, etc. It also includes data hiding feature therefore it is more secure.
  This model is based on real life entities that focuses on by whom task is to be done rather than focusing on what to do.
 Example : JAVA, C#, C++, etc.
 
----> Structured Programming : views the 2 core elements of a program ie data & function as 2 diff entities.
+---> "Structured Programming ": views the 2 core elements of a program ie data & function as 2 diff entities.
 e.g: Pascal, ALGOL, C, Modula-2, etc.
 
-Object:
+"Object:"
 An object is an instance of a class, created with specific data.
 
-Class:
+"Class:"
 A class is a template that defines the properties, methods, and variables of a particular type of object.
 
-Three categories of class members
+"Three categories of class members"
 − private(default)
 • Member cannot be accessed outside the class
 − Public

@@ -1,0 +1,36 @@
+(3 pillars of TOC)  
+--LAG-- 
+1. Language:
+'symbols'--> {0,1,2,a,b};
+'alphabet'--> finaite set of symbols //𝚺(a,b)
+'string' --> collection of alphabet  
+=>(aa,ab,ba,bb) of length=2 && (a,b) of length 1  for //𝚺(a,b) ;
+# language is collection of strings 
+1. finite language
+2. infinite language
+
+2. "Automata" :
+#  is the study of abstract machines and automata, 
+# as well as the computational problems that can be solved using them.
+
+3. Grammer
+-> if string is part of language. 
+- is defined as quadraple VTPS -
+1. Variable
+2. Terminal
+3. Production rule
+4. Start symbol
+
+
+"kleen closure" :
+𝚺(a+b)^* -->infinite language
+𝚺^*=𝚺^+ + 𝚺^0(ε); (postive closure + sigma zero or epsilon) 
+
+
+-- "Determinate Finite Automata " DFA(Q,𝚺,𝛓,q•,F) :  --
+Q:-> Set of finite states
+𝚺 :-> a,b
+𝛓 :-> Transition
+q• :-> Start
+F :-> Set of final states
+# F is a subset of Q 
