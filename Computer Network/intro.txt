@@ -76,16 +76,55 @@
 # rest for applications.
 
 
---"OSI MODEL" :->
+--"OSI(open system interconnection) MODEL" :->All People Seem To Need Data Processing (https://www.youtube.com/watch?v=APdjpzRlZEU)
+is a conceptual framework used to understand and standardize the functions of a communication system or network.
 # 7 layers
 1. Application 
-2. Presentation.
-3. Session
-4. Transport
-5. Network
-6. Data Link
-7. Physical Layer
+a). provides interface btwen layers and applications.
+b). Protocols: HTTP, FTP, SMTP, DNS, etc.
+c). Key Components: Web browsers, email clients, file transfer software.
 
+2. Presentation.
+a). Translates data between the application layer and the network.
+b). it handles data encryption, decryption, compression, and conversion (e.g., character encoding, data format translation).
+c). Key Components: Data encryption, compression, data translation.
+
+3. Session
+a). Manages sessions between applications. 
+b). It establishes, maintains, and terminates connections between applications, handling session management and synchronization.
+c). Key Components: Session management, authentication, authorization.
+
+4. Transport
+a). Ensures end-to-end communication, error recovery, and flow control.
+It segments and reassembles data, making sure it arrives in order and without errors.
+b). Data Unit: Segments (TCP) or Datagrams (UDP).
+c). also called 'end to end layer'
+d). protocols used i). TCP (TRANSMISSION CONTROL PROTOCOL) ii). UDP(USER DATAGRAM PROTOCOL).
+e). Key Components: Ports, TCP/UDP, flow control, error checking.
+
+5. Network
+a). Assigns IP address to devices .
+b). Data Unit: Packets.
+c). Switching and Routing Techniques are used.
+d). adds source and destination to data packets .
+e). determines best path for travelling.
+
+6. Data Link.
+a). Encodes & Decodes data packets sent by network layer called as frames & ensures no error in data packets.
+b). uses 2 protocols i). HDLC(High level data link control). PPP (Point to point protocol).
+c). divided into 2 sub layers i). MAC (media acess control) --Manages protocol access to the physical network medium. ii). LLC (Logic link control).--Handles error checking and flow control.
+d). Responsible for adding headers and trailers to these frames .
+e). Data Unit: Frames.
+
+7. Physical Layer
+a). Deals with the physical connection between devices and the transmission.
+it Converts digital signals into electric signals.
+b). Data Unit: 'Bits'
+c). Key Components: Cables, switches, network interface cards (NICs), hubs, connectors, etc.
+d). bit level synchronization.
+e). Determines type of Topology.
+f). Determines transmission mode e.g simplex,duplex etc.
+g). Determines bit rate.
 
 "TCP/IP MODEL":  Transmission Control Protocol / Internet Protocol
 # 5 layers
