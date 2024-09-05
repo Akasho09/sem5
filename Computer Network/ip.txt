@@ -21,7 +21,7 @@ Class E	    240-254        Reserved for Research and development
 
 " Class A " : 
 IP addresses belonging to class A are assigned to the networks that contain a large number of hosts. 
-# first bit 0 fixed => 50% of total address available
+# first bit 0 fixed => 50%(2^31) of total address available
 # no of hosts possible in every network = 2^24 -2 (x.0.0.0 is address of host itself and x.255.255.255 is broadcast address {used to share somehing to all networks}).
 # The default subnet mask for Class A is 255.x.x.x. 
 # IP addresses belonging to class A ranges from 0.0.0.0 – 127.255.255.255. 
@@ -31,7 +31,7 @@ IP addresses belonging to class A are assigned to the networks that contain a la
 IP address belonging to class B is assigned to networks that range from medium-sized to large-sized networks. 
 # The network ID is 14 bits long.
 # The host ID is 16 bits long.
-# First 2 bits 10 fixed. =>25% of total addresses
+# First 2 bits 10 fixed. =>25% (2^30)of total addresses
 # The default subnet mask for class B is 255.255.x.x. Class B has a total of: 
 # 2^14 = 16384 network address
 # 2^16 – 2 = 65534 host address
@@ -39,4 +39,39 @@ IP address belonging to class B is assigned to networks that range from medium-s
 # IP addresses belonging to class B ranges from 128.0.0.0 – 191.255.255.255.
 
 "Class C":
+IP addresses belonging to class C are assigned to small-sized networks.
+# The network ID is 24 bits long.
+# The host ID is 8 bits long.
+# first 3 fixed bits 110. => 12.5% (2^29) of total addresses.
+# The default subnet mask for class C is 255.255.255.x
+# Address Range=192-223=32 (2^5)
+# Class C has a total of:
+# 2^21 = 2097152 network address
+# 2^8 – 2 = 254 host address
+# IP addresses belonging to class C range from 192.0.0.0 – 223.255.255.255.
 
+"Class D":
+# IP address belonging to class D is reserved for multi-casting. 
+# The higher-order bits of the first octet of IP addresses belonging to class D is always set to 1110. =>6.25% (2^28) addresses
+# The remaining bits are for the address that interested hosts recognize.
+# Class D does not possess any subnet mask. IP addresses belonging to class D range from 224.0.0.0 – 239.255.255.255.
+# address range = 224-239	.
+
+"Class E":
+# IP addresses belonging to class E are reserved for experimental and research purposes.
+# IP addresses of class E range from 240.0.0.0 – 255.255.255.255. 
+# This class doesn’t have any subnet mask. 
+# The higher-order bits of the first octet of class E are always set to 1111.=>6.25%
+# address range = 240-255.
+
+
+
+"Classless Addressing":
+Classless Inter-Domain Routing (CIDR) is a method for efficiently allocating IP addresses and routing Internet Protocol (IP) packets. 
+Unlike classful addressing, which divides IP addresses into fixed classes (A, B, C, etc.), CIDR allows for variable-length subnet masks (VLSM). 
+This means that networks can be divided into smaller, more flexible subnets according to their specific needs, rather than being constrained by predefined class boundaries.
+
+Some Values Calculated in Subnetting:
+1. Number of subnets : 2(Given bits for mask – No. of bits in default mask)
+2. Subnet address : AND result of subnet mask and the given IP address
+4. Number of hosts per subnet : 2(32 – Given bits for mask) – 2.
