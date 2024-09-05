@@ -16,10 +16,13 @@ providing abstraction and simplifying the usage of the class while allowing the 
 3."Polymorphism" :
 Polymorphism means "many forms", and it occurs when we have many 
 classes that are related to each other by inheritance.
+
 "Types of Polymorphism"
 1. "Compile-time Polymorphism "
 Compile-time polymorphism, also known as static polymorphism, 
 is a type of polymorphism that is resolved during the compilation of the program rather than at runtime.
+# static binding or early binding i.e during compilation before runtime
+
  -- This type of polymorphism is achieved by function overloading or operator overloading.
 " a). Function Overloading :"
 When there are multiple functions with the same name but different parameters, then the functions are said to be overloaded.
@@ -70,6 +73,17 @@ class member acess op (->)
 
 # For operator overloading to work, at least one of the operands must be a user-defined class object.
 2.  Runtime Polymorphism:
+a). This type of polymorphism is achieved by Function Overriding.
+b). Late binding and dynamic polymorphism are other names for runtime polymorphism.
+c). The function call is resolved at runtime in runtime polymorphism.
+In contrast, with compile time polymorphism, the compiler determines which function call to bind to the object after deducing it at runtime.
+d). Runtime Polymorphism cannot be achieved by data members in C++
+
+  A. "Function Overriding"
+Function Overriding occurs when a derived class has a definition for one of the member functions of the base class.
+That base function is said to be overridden.
+Virtual functions are Dynamic in nature. 
+A virtual function is called during Runtime
 
 
 4."abstraction" 
