@@ -108,6 +108,30 @@ e.g ~lw $t0 , 4($s3)  ---load data at $s3+4 to t0 reg  ==== 000110 10001 01000 0
 6-bits operand  26 bits address 
 
 e.g  ~ J 10000 is represented as  ===== xxxxxx 00000000000000000000001110  --jump to 14
+jal (jump and link )  : stores address of next instruction and jumps  xxxxxx 00000000000000000000001110  ---diff operand only
+The jr (Jump Register) instruction in MIPS assembly is used to jump to an address contained in a register. 
+jr $register  ---- after jal
 
 
 
+"MIPS Instruction Execution ":
+1. Single cycle Execution:
+Each MIPS instruction is executed in 1 fixed clock cycle.
+slowest cycle is chosen . so there is time wastage .
+
+
+2. Multi - Cycle Execution:
+| Fetch | Decode | Execute | Memory | WriteBack 
+but memory part takes more time than others .
+
+3. Pipelining :
+parellel overlapping multicycle .
+maximum resource utilization.
+
+| Fetch | Decode | Execute | Memory | WriteBack 
+        | Fetch | Decode | Execute | Memory | WriteBack 
+                | Fetch | Decode | Execute | Memory | WriteBack .
+
+
+
+               https://www.youtube.com/watch?v=tSHPMMcxmio&list=PLOq2ARxtuVPiBd5oPNXLZMd12QSumFMDw&index=2

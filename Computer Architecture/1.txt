@@ -4,17 +4,16 @@ Total time to complete task.
 2. CPU time :
 Time taken by CPU to complete its task.
 
-"Amdahl’s law is:"
-S = 1 / (1 - P + (P / N));
+"Amdahl's law is:"
+S = 1 / (1 - P + (P / N)) = old execution time / new execution time.
 
 Where:
 S is the speedup of the system
-P is the proportion of the system that can be improved
-N is the number of processors in the system.
+P is the proportion of the system that can be improved  -- fraction enhanced .
+N is the number of processors in the system. --speedup enhanced.
 
 "Parellelism" :
 Parallel computing is a computing where the jobs are broken into discrete parts that can be executed concurrently. 
-Each part is further broken down to a series of instructions. 
 Instructions from each part execute simultaneously on different CPUs.
 
 "Flynn's classification -"

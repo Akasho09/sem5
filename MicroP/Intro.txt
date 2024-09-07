@@ -7,3 +7,44 @@ High level language : english
 e.g : c++,java etc
 High level language--INTERPRETER(line by line) or COMPILER (whole) --Machine language
 
+
+"8085 Microprocessor":
+The 8085 microprocessor is an 8-bit(data bus) microprocessor that was developed by Intel in the 1976
+1. its 40 pin integrated circuit.
+2. operating frequencies 3, 5 & 6.
+3. 16 bit address bus.
+
+"Registers in 8085: "
+1. General Purpose Registers :  
+The 8085 has six general-purpose registers to store 8-bit data , these are identified as- 
+B, C, D, E, H, and L. 
+These can be combined as register pairs – BC, DE, and HL, to perform some 16-bit operation. 
+These registers are used to store or copy temporary data, by using instructions, during the execution of the program.
+
+2. Specific Purpose Registers –
+'Accumulator':
+The accumulator is an 8-bit register (can store 8-bit data) that is the part of the arithmetic and logical unit (ALU). 
+After performing arithmetical or logical operations, the result is stored in accumulator. Accumulator is also defined as register A.
+
+'Flag registers:'
+The flag register is a special purpose register and it is completely different from other registers in microprocessor. 
+It consists of 8 bits and only 5 of them are useful. The other three are left vacant and are used in the future Intel versions.
+{ S(sign) | Z(zero) | - | AC(aux) | - | P(parity) | - | CY(carry) }
+carry => carry of last bit(d7).
+parity => no of ones upto last bit except last
+auxillary => carry of bit(d3)
+zero => It is set, when the operation performed in the ALU results in zero(all 8 bits are zero), otherwise it is reset. 
+It helps in determining if two numbers are equal or not
+sign => If the sign flag is set, it means that number stored in the accumulator is negative, and if reset, then the number is positive.
+
+3. Memory Registers 
+There are two 16-bit registers used to hold memory addresses. 
+The size of these registers is 16 bits because the memory addresses are 16 bits. They are :-
+'Program Counter':
+This register is used to sequence the execution of the instructions. 
+The function of the program counter is to point to the memory address from which the next byte is to be fetched. 
+When a byte (machine code) is being fetched, the program counter is incremented by one to point to the next memory location.
+'Stack Pointer: '
+It is used as a memory pointer. 
+It points to a memory location in read/write memory, called the stack. It is always incremented/decremented by 2 during push and pop operation.
+'Temporary register':

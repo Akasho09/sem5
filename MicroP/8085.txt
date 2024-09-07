@@ -1,0 +1,33 @@
+8085 Microprocessor Command List
+The 8085 microprocessor has a wide range of instructions that can be categorized into several groups, including:
+
+"Control Instructions"
+JMP (Jump): Unconditionally transfers program control to a specified memory location. Example: JMP 8500H jumps to memory location 8500H.
+CALL (Call): Transfers program control to a subroutine and pushes the return address onto the stack. Example: CALL 3000H calls the subroutine at memory location 3000H.
+RET (Return): Pops the return address from the stack and transfers program control back to the calling program.
+
+"Logical Instructions"
+ANI (AND Immediate): Performs a bitwise AND operation between the accumulator and an immediate value. Example: ANI 0FH sets the accumulator to 0FH (binary 1111).
+ORI (OR Immediate): Performs a bitwise OR operation between the accumulator and an immediate value. Example: ORI 03H sets the accumulator to 03H (binary 00000011).
+XRI (Exclusive OR Immediate): Performs a bitwise XOR operation between the accumulator and an immediate value. Example: XRI 0DH sets the accumulator to 0DH (binary 11011100).
+
+"Branching Instructions"
+JNZ (Jump if Not Zero): Transfers program control to a specified memory location if the accumulator is not zero. Example: JNZ 4000H jumps to memory location 4000H if the accumulator is not zero.
+JC (Jump if Carry): Transfers program control to a specified memory location if the carry flag is set. Example: JC 5000H jumps to memory location 5000H if the carry flag is set.
+
+"Arithmetic Instructions"
+ADD (Add): Adds the accumulator and an immediate value or a register value. Example: ADD 09H adds 09H to the accumulator.
+SUB (Subtract): Subtracts an immediate value or a register value from the accumulator. Example: SUB 03H subtracts 03H from the accumulator.
+INC (Increment): Increments the value in a register or memory location. Example: INC B increments the value in register B.
+
+
+
+"Data Transfer Instructions"
+1. MOV (Move): Moves data between registers or between memory and registers. Example: MOV A, B moves the value in register B to the accumulator.
+2. MVI (Move Immediate): Moves an immediate value to a register. Example: MVI C, 09H moves the value 09H to register C.
+3. LXI (Load Immediate): 
+Loads a register pair with an immediate value. 
+Example: LXI H, 3000H loads register pair H with the value 3000H.
+LXI A, 0001  --A isn't correct as LXI doesn't support using single registers. It should be used with register pairs like HL, DE, or BC.
+LXI B, 0001 }   //
+LXI C, 0002 }   //
