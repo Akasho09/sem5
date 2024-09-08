@@ -1,0 +1,55 @@
+"Immediate addressing mode (symbol #)"
+/syntax : Instruction Destination,Immediate Value
+In this mode data is present in address field of instruction.
+The operand is given explicitly in the instruction.
+Example:  MOV AL, #35 (move the data 35H into AL register)
+opcode | address i.e Data
+e.g   li $t0, 10
+addi $t1, $t0, 5 
+Base Register: $t0
+Immediate Value: 5
+Operation: Adds the immediate value to the content of the base register and stores the result in $t1.
+
+
+"Register mode:"
+In register addressing the operand is placed in one of 8 bit or 16 bit general purpose registers. 
+The data is in the register that is specified by the instruction.
+Example: MOV AX,CX (move the contents of CX register to AX register)
+add $t0, $t1, $t2 
+
+
+"Register Indirect mode: "
+In this addressing the operand’s offset is placed in any one of the registers BX,BP,SI,DI as specified in the instruction. 
+The effective address of the data is in the base register or an index register that is specified by the instruction.
+Example : MOV AX, [BX](move the contents of memory location s 
+     addressed by the register BX to the register AX)
+AC<-M(BX)
+AX<-AC
+e.g lw $t0, 0($t1)
+sw $t0, 0($t1)
+
+
+"Direct addressing/ Absolute addressing Mode (symbol [ ]):"
+ The operand’s offset is given in the instruction as an 8 bit or 16 bit displacement element. 
+ In this addressing mode the 16 bit effective address of the data is the part of the instruction.
+ Example: ADD AL,[0301]   //add the contents of offset address 0301 to AL
+
+ 
+" Indirect addressing Mode (symbol @ or () ):"
+ In this mode address field of instruction contains the address of effective address.Here two references are required.
+ 1st reference to get effective address.
+ 2nd reference to access the data.
+Example:MOV AX, [SI +05] 
+LOAD R1, @500  //at 500 , at 500 address, address is present of the data to load 
+
+
+"Displacement addressing" 
+is a method used to calculate the address of an operand by adding a displacement value to the contents of a register. 
+It's a combination of direct and register indirect addressing. 
+EA = A + (R), 
+Effective Address=Base Register+Displacement
+In this the address field holds two values, A(which is the base value) and R(that holds the displacement), or vice versa.
+e.g lw $t0, 4($s1)
+Base Register: $s1
+Displacement: 4
+Effective Address: The content of $s1 plus 4
