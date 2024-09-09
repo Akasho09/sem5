@@ -16,11 +16,11 @@ add $s1 , $s2 , $t0
 ; while(save[i]==k) i+=1 ; where i is in  $s3 , base addr of save = $s6 , k in $s5
 
 loop:
-sll $t0 , $s3 , 2  ; =>*4
-add $t1 , $t0 , $s6 
-lw $t2 , 0($t1)
-bne $t2 , $s5 exit
-addi $s3 , $s3 , 1
+sll $t0 , $s3 , 2  ; =>*4 ; 4*i
+add $t1 , $t0 , $s6 ; 4*i+save
+lw $t2 , 0($t1) ; load save[i] to t2
+bne $t2 , $s5 exit ; 
+addi $s3 , $s3 , 1 ;
 j loop
 
 exit:

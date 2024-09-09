@@ -4,7 +4,7 @@ XCHG  ; exchange LH with DE
 LHLD 0002H ;  load again LH
 DAD D ; double add LH & CD at H,L
 JNC jmpp ; jmp if no carry
-INR C ; incremet carry if carry
+INR C ; incremet carry if carry not INX (for pair)
 jmpp: SHLD 0005H ; store H,L at 0005,0006
 MOV A,C
 STA 0004H ; carry store

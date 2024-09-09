@@ -37,7 +37,7 @@ zero => It is set, when the operation performed in the ALU results in zero(all 8
 It helps in determining if two numbers are equal or not
 sign => If the sign flag is set, it means that number stored in the accumulator is negative, and if reset, then the number is positive.
 
-3. Memory Registers 
+3. Memory Registers :
 There are two 16-bit registers used to hold memory addresses. 
 The size of these registers is 16 bits because the memory addresses are 16 bits. They are :-
 'Program Counter':

@@ -31,3 +31,108 @@ Example: LXI H, 3000H loads register pair H with the value 3000H.
 LXI A, 0001  --A isn't correct as LXI doesn't support using single registers. It should be used with register pairs like HL, DE, or BC.
 LXI B, 0001 }   //
 LXI C, 0002 }   //
+
+
+
+
+1. Data Transfer Instructions
+'MOV': Copies data from one register to another.
+Example: MOV A, B (Copy data from register B to register A)
+'MVI': Moves immediate data to a register or memory location.
+Example: MVI A, 05H (Move the immediate value 05H into register A)
+'LDA': Loads data from a specified memory location into the accumulator.
+Example: LDA 2500H (Load the accumulator with data from memory address 2500H)
+'LXI (Load Immediate): '
+Loads a register pair with an immediate value. 
+Example: LXI H, 3000H loads register pair H with the value 3000H.
+LXI A, 0001  --A isn't correct as LXI doesn't support using single registers. It should be used with register pairs like HL, DE, or BC.
+LXI B, 0001 }   //
+LXI C, 0002 }   //
+'STA': Stores the data from the accumulator to a specified memory location.
+Example: STA 3000H (Store the contents of the accumulator to memory address 3000H)
+'LHLD': Loads a register pair directly from a specified memory location.
+Example: LHLD 4000H (Load H and L registers from memory address 4000H)
+'SHLD': Stores the contents of a register pair to a specified memory location.
+Example: SHLD 4000H (Store H and L registers to memory address 4000H)
+'LDAX': Loads the accumulator indirectly through a register pair.
+Example: LDAX B (Load the accumulator with data from the memory location pointed by register pair BC)
+'STAX': Stores the contents of the accumulator indirectly through a register pair.
+Example: STAX D (Store the contents of the accumulator into the memory location pointed by register pair DE)
+'XCHG': Exchanges the contents of the H-L pair with the D-E pair.
+Example: XCHG (Exchange contents of HL with DE)
+
+2. Arithmetic Instructions
+ADD: Adds the contents of a register to the accumulator.
+Example: ADD B (Add register B to the accumulator)
+ADI: Adds immediate data to the accumulator.
+Example: ADI 05H (Add immediate value 05H to the accumulator)
+SUB: Subtracts the contents of a register from the accumulator.
+Example: SUB C (Subtract register C from the accumulator)
+SUI: Subtracts immediate data from the accumulator.
+Example: SUI 03H (Subtract immediate value 03H from the accumulator)
+'INR': Increments the contents of a register by 1.
+Example: INR D (Increment register D by 1)
+'DCR': Decrements the contents of a register by 1.
+Example: DCR E (Decrement register E by 1)
+'INX': Increments a register pair by 1.
+Example: INX H (Increment the HL register pair by 1)
+'DCX': Decrements a register pair by 1.
+Example: DCX B (Decrement the BC register pair by 1)
+DAD: Adds a register pair to the HL pair.
+Example: DAD B (Add BC register pair to HL register pair)
+CMA: Complements the contents of the accumulator (bitwise NOT).
+Example: CMA (Complement the accumulator)
+
+3. Logical Instructions
+ANA: Performs bitwise AND with the accumulator and a register.
+Example: ANA D (AND the accumulator with register D)
+ANI: Performs bitwise AND with the accumulator and immediate data.
+Example: ANI 0FH (AND the accumulator with immediate value 0FH)
+XRA: Performs bitwise XOR with the accumulator and a register.
+Example: XRA H (XOR the accumulator with register H)
+XRI: Performs bitwise XOR with the accumulator and immediate data.
+Example: XRI 0FH (XOR the accumulator with immediate value 0FH)
+ORA: Performs bitwise OR with the accumulator and a register.
+Example: ORA L (OR the accumulator with register L)
+ORI: Performs bitwise OR with the accumulator and immediate data.
+Example: ORI 01H (OR the accumulator with immediate value 01H)
+'CMP': Compares the contents of a register with the accumulator.
+Example: CMP A (Compare register A with the accumulator)  => if [A]>[B] =>CARRY=1
+'CPI': Compares immediate data with the accumulator.
+Example: CPI 0AH (Compare immediate value 0AH with the accumulator)
+RLC: Rotates the accumulator left through carry.
+Example: RLC (Rotate the accumulator left through carry)
+RRC: Rotates the accumulator right through carry.
+Example: RRC (Rotate the accumulator right through carry)
+
+4. Branching Instructions
+'JMP': Unconditional jump to a specified address.
+Example: JMP 2000H (Jump to address 2000H)
+'JC': Jump if carry flag is set.
+Example: JC 2050H (Jump to address 2050H if carry flag is set)
+'JNC': Jump if carry flag is not set.
+Example: JNC 2050H (Jump to address 2050H if carry flag is not set)
+'JZ': Jump if zero flag is set.
+Example: JZ 2100H (Jump to address 2100H if zero flag is set)
+'JNZ': Jump if zero flag is not set.
+Example: JNZ 2100H (Jump to address 2100H if zero flag is not set)
+'CALL': Calls a subroutine at the specified address.
+Example: CALL 3000H (Call subroutine at address 3000H)
+'RET': Returns from a subroutine.
+Example: RET (Return from subroutine)
+'CPI': Compares immediate data with the accumulator.
+Example: CPI 0AH (Compare immediate value 0AH with the accumulator)
+
+5. Control Instructions
+NOP: No operation.
+Example: NOP (Do nothing and move to the next instruction)
+HLT: Halts the microprocessor.
+Example: HLT (Halt the microprocessor)
+DI: Disables interrupts.
+Example: DI (Disable interrupts)
+EI: Enables interrupts.
+Example: EI (Enable interrupts)
+SIM: Set Interrupt Mask.
+Example: SIM (Configure interrupts using accumulator)
+RIM: Read Interrupt Mask.
+Example: RIM (Read status of interrupts)

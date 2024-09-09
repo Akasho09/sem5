@@ -30,5 +30,4 @@ INX H ; INCREMENT ADDRESS TO 0002
 ADD M  ; ADD 0002 (MEMORY) TO ACCUMULATOR
 STA 0003H  ;store accumulator data at 0003 address
 
-
 hlt
