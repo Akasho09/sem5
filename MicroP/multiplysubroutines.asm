@@ -1,14 +1,13 @@
-LXI H, 0002H
-MOV D,M
-LXI B , 0003H
-loop: INX H
-CALL addd
-DCX B
+LXI H, 0002H ; load H with num1
+LXI B , 0003H ; load B with num2
+MVI A,0 ; Accumulator ==0
+MOV D,M  ; storing D with num2
+loop: CALL addd
+DCX H
 JNZ loop
 MOV A,D
-STA 0012H
+STA 0021H
 HLT
-addd: MOV A,D
-ADD M
+addd: ADD D
 MOV D,A
 RET
