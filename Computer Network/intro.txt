@@ -72,11 +72,11 @@
 546, 547	DHCPv6 IPv6 version of DHCP
 'mongoD' : 27017
 'sql' : 1433
-#(0-1023 =>reserved 
+#(0-1023) =>reserved 
 # rest for applications.
 
 
---"OSI(open system interconnection) MODEL" :->All People Seem To Need Data Processing (https://www.youtube.com/watch?v=APdjpzRlZEU)
+--"OSI(open system interconnection) MODEL" :-> (All People Seem To Need Data Processing) (https://www.youtube.com/watch?v=APdjpzRlZEU)
 is a conceptual framework used to understand and standardize the functions of a communication system or network.
 # 7 layers
 1. Application 
@@ -133,3 +133,9 @@ g). Determines bit rate.
 3. Network.
 4. Data Link
 5. Physical Layer
+
+
+'Bit Rate'
+Bit rate is the transmission of a number of bits per second. 
+On the other hand, the Baud rate is defined as the number of signal units per second.
+Bit Rate = Baud Rate × No. of Bits per Baud
