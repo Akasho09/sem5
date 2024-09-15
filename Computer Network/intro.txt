@@ -101,6 +101,7 @@ b). Data Unit: Segments (TCP) or Datagrams (UDP).
 c). also called 'end to end layer'
 d). protocols used i). TCP (TRANSMISSION CONTROL PROTOCOL) ii). UDP(USER DATAGRAM PROTOCOL).
 e). Key Components: Ports, TCP/UDP, flow control, error checking.
+{It assigns the source port p1 and the destination port p2. }
 
 5. Network
 a). Assigns IP address to devices .
@@ -108,6 +109,7 @@ b). Data Unit: Packets.
 c). Switching and Routing Techniques are used.
 d). adds source and destination to data packets .
 e). determines best path for travelling.
+{It encapsulates each transport layer segment into an IP packet. The packet header contains the source IP address IP1 and the destination IP address IP2.}
 
 6. Data Link.
 a). Encodes & Decodes data packets sent by network layer called as frames & ensures no error in data packets.
@@ -115,6 +117,7 @@ b). uses 2 protocols i). HDLC(High level data link control). PPP (Point to point
 c). divided into 2 sub layers i). MAC (media acess control) --Manages protocol access to the physical network medium. ii). LLC (Logic link control).--Handles error checking and flow control.
 d). Responsible for adding headers and trailers to these frames .
 e). Data Unit: Frames.
+{The frame includes the source physical address 15 and the physical address of the router (gateway) on the local network (obtained via ARP).}
 
 7. Physical Layer
 a). Deals with the physical connection between devices and the transmission.
@@ -139,3 +142,8 @@ g). Determines bit rate.
 Bit rate is the transmission of a number of bits per second. 
 On the other hand, the Baud rate is defined as the number of signal units per second.
 Bit Rate = Baud Rate × No. of Bits per Baud
+
+
+Transmission time = Total byte size / Bandwidth .
+
+ 
