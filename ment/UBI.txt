@@ -1,14 +1,22 @@
 Good Evening!
 
-Today, we’re diving into a thought-provoking yet powerful concept—Universal Basic Income, or UBI. Let’s kick things off with a “Did You Know?” moment.
+Today, we will be dissusing the concept of —Universal Basic Income, or UBI. 
+To get started we begin with a “Did You Know?” question.
 
-Did you know that, according to the United Nations Millennium Development Goals (MDG) program, around 80 million out of 1.2 billion Indians—approximately 6.7% of the population—lived below the poverty line of ₹90 per day in 2019? Moreover, 84% of Indians survived on less than ₹495 per day.
+Did you know that,
+according to the United Nations Millennium Development Goals (MDG) program, around 80 million out of 1.2 billion Indians—approximately 
+6.7% of the population—lived below the poverty line of ₹90 per day in 2019?. Moreover, 84% of Indians survived on less than ₹495 per day.
 
-Adding to that, over 10 crore Indians are unemployed, and India’s part-time employment rate stands at 24% of total employment, with a large chunk of this percentage being students working to make ends meet.
+Adding to that, over 10 crore Indians are unemployed, and India’s part-time employment rate stands at 24% of total employment, 
+with a large chunk of this percentage being students working to make ends meet.
 
-Now, imagine a scenario where the Government of India provides every citizen with a regular, unconditional sum of money—irrespective of their income, job status, or background. What would happen then? The poverty line would effectively rise by the amount given by the government, plus the existing baseline, helping both those below the poverty line and those struggling with unstable employment or part-time jobs, such as students.
+Now, imagine What if Government of India starts giving every citizen with a regular, unconditional sum of money—irrespective of their income, job status, or background. 
+What would happen then , if we move back to our 2 questions we had ?
+The poverty line would effectively rise by the amount given by the government, plus the existing baseline, 
+helping both those below the poverty line and those struggling with unstable employment or part-time jobs, such as students.
 
-This is where Universal Basic Income comes into play—a mechanism aimed at shifting the poverty line. UBI proposes a regular payment to all citizens, ensuring a safety net that doesn’t depend on your job or financial status.
+This is where Universal Basic Income comes into play —a mechanism aimed at shifting the poverty line. 
+UBI proposes a regular payment to all citizens, ensuring a safety net that doesn’t depend on your job or financial status.
 
 Here’s how it works:
 
@@ -16,4 +24,65 @@ Regular Payments: Each citizen receives a fixed sum of money at consistent inter
 Unconditional: There are no strings attached—no need to prove employment or financial need. Everyone qualifies for UBI, regardless of their situation.
 Cash-Based: Payments are made in cash, providing complete freedom to spend it however one chooses. This maximizes flexibility and autonomy.
 Universal: The system covers everyone within the target population, making it truly inclusive.
-The beauty of UBI is that it minimizes bureaucratic hurdles while offering a straightforward solution to poverty and financial insecurity. By providing a steady income to all, it offers a new way to think about economic support in an increasingly uncertain world.
+The beauty of UBI is that it minimizes bureaucratic hurdles while offering a straightforward solution to poverty and financial insecurity. 
+
+
+Here are some case studies related to UBI.
+
+1. Finland (2017-2018):
+2,000 unemployed people aged 25-58 were given €560 (₹52,059) per month.
+Key Findings:
+
+Improved mental health
+Increased entrepreneurship
+Had limited effects on employment.
+
+2. Canada (2016-2019):
+1,500 people in Canada were given $1,000 (₹83,883) per month.
+Key Findings:
+
+Increased spending in local businesses
+Reduced stress and anxiety
+Improved financial stability.
+
+Case Studies & UBI History in India:
+
+3. Madhya Pradesh UBI Pilot (2011-2012):
+6,000 people from 9 villages were given a small amount of ₹200 to adults and ₹100 to children for 2 years. One village served as a control group to compare the results.
+Key Findings:
+
+Increased household income and reduced poverty
+Improved education and health outcomes
+Empowerment of women: Women, especially in SEWA (Self Employed Women’s Association)-organized villages, gained greater control over household finances, leading to more economic independence
+Other important research on UBI in India:
+
+Economic Survey of India 2016-17:
+The survey, prepared by then Chief Economic Adviser Arvind Subramanian, proposed UBI as a tool to address the challenges of economic insecurity and social welfare.
+Key Proposals:
+
+A basic income of ₹7,620 per annum (about $113 USD) for all citizens
+However, it did not recommend immediate implementation but emphasized the need for further research and experiments
+Sikkim UBI Proposal (2019):
+In 2019, the state of Sikkim announced plans to implement a UBI scheme by 2022. The proposal came from the Sikkim Democratic Front (SDF) party, which aimed to offer a basic income to all residents. However, the plan could not be implemented as the party that suggested the scheme didn’t win the elections.
+
+Here’s What Some of the Most Influential People in the World Think About UBI!
+
+Elon Musk said, “Due to mass disruption in employment caused by automation, I don’t think we’re going to have a choice. I think it’s going to be necessary. There will be fewer and fewer jobs that a robot cannot do better.”
+
+Mark Zuckerberg said, “We should explore ideas like universal basic income to make sure that everyone has a cushion to try new ideas.”
+
+Bill Gates thinks it’s not the right time to implement UBI. Gates believes that resources are too limited to make it happen now and that more targeted programs are needed first.
+
+Barack Obama said, “Whether a universal income is the right model — is it going to be accepted by a broad base of people? — that’s a debate we’ll be having over the next 10 or 20 years.”
+
+we can see that
+while some tech leaders like Musk and Zuckerberg see UBI as an inevitable or promising solution, 
+others like Gates and Obama raise concerns about its timing and broad societal acceptance.
+that also sums up the UBI Future that its exp .... 
+
+The Future of UBI Worldwide : 
+While UBI is still in its experimental phase, the results have been promising in many cases. 
+Full-scale national implementation has yet to be achieved. The future of UBI will likely involve more experimentation and gradual, 
+targeted adoption, especially in response to growing concerns about job displacement due to automation and technological advancements.
+
+THANK YOU! For the time.
