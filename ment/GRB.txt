@@ -1,13 +1,66 @@
-This slight excess of male births is believed to balance out the higher mortality rates that males face throughout life.
+slide-1 
+Here are the Key Points we will be touching in this Presentation:
+Why is Natural GRB slightly biased towards Males than Females
+How does the Nature balances out this biased GRB towards Males than Females.
+we will be Analyzing the Skewed GRB Across Different States in India and Underlying Causes
+and towards the end we will see , Govt Initiatives Addressing Gender Imbalance and Efforts to Promote Gender Equality.
 
-This can also be understood by the data estimated by National Family Health Survey (2019-21), 
-the sex ratio of the population (females per 1000 males) for the country was estimated as 1020.
+slide-2
+Gender Ratio at Birth (GRB) I to the number of male live births for every 1000 female live births.
+we can also express it as Males per 1000 females or 
+- Although we can express the gender ratio as females per 100 or even 10,  but then we see that reduces the precesion of the data.
+The natural GRB is slightly biased towards males, with an estimated ratio of 1.03 to 1.06 males per female.
+- This slight excess of male births is believed to balance out the higher mortality rates that males face throughout life like males are more 
+  susceptible to accidents and diseases and genetic disorders.
+- Other mechansisms nature has evolced is Differential Aging , which we can also see in the table.
+Overall Ratio is 1020 females per males.
 
+slide -3 
+This slide shows Skewed GRB of different states of India : 
+we can see While India's overall sex ratio is moderate, individual states exhibit significant variations in this metric.
+Kerala has the best SRB among all the large states of India.
+Uttarakhand has the worst SRB.
 
+slide - 4
+1. Son Preference and Patriarchy :
+Preferring a boy over a girl and emphasizing boys in a society dominated by male authority,
+factors inflencing Son Preference and Patriarchy
+Cultural Factors : prioritize male children as heirs and providers.
+Religious Practices : Sons are seen as necessary to perform last rites and continue the family name.
+Example : Haryana’s gender ratio is highly skewed due to a strong cultural preference for male heirs.
 
-In India, the gender ratio at birth (GRB) varies significantly across different states due to a mix of cultural, economic, and regional factors. 
+2. Economic Considerations :
+most States Affected : Gujarat, Rajasthan, Uttar Pradesh
+Dowry System In these states is prevalent, result daughters are seen as a financial burden.
+other reason is Perceived Economic Advantage of Sons : Sons are viewed as potential breadwinners and also support for aging parents.
+Example : In Rajasthan , economic factors related to dowry play a major role in skewing the sex ratio.
 
-While the natural ratio is around 105 males for every 100 females, many Indian states have skewed ratios, often due to    
+slide - 5
+oter reasons inlude 3. Access to Prenatal Sex Determination Technology :  and 4.Inadequate Enforcement of Laws: 
+Most States Affected are the more developed states like :  Delhi, Maharashtra, Gujarat
+illegal use of early sex Determination and easily available ultrasound clinics are the major factors.  
+also the weak implementation of PCPNDT in states like Punjab and Rajasthan allows clinics to offer illegal prenatal sex determination.
 
+slide - 6
+5. Education and Awareness Gaps
+States Affected : Uttar Pradesh, Bihar.
+Low Female Education : In states where female literacy rates are lower, traditional norms remain stronger, reinforcing the preference for sons.
+Lack of Awareness : Poor awareness about the consequences of a skewed gender ratio contributes to the persistence of these practices.
+Example : Bihar has one of the lower literacy rates, which correlates with its skewed gender ratio (895) .
 
-Number of reported selective abortion cases across India in 2022, by state
+slide - 7
+Here is graph which demonstrates the Prefrence of Male child over female in India.
+Graph is btwn last child and not the last child 
+i.e if the child is last (2nd graph ) GRB is close to 180 if first child 
+=> which means if a couple is having first child as a boy they stop having more children
+reverse is depicted in 1st graph that if first child is girl they continue to have more babies.
+
+slide-8
+Government has also took some Initiatives and the major among them are :
+National Mission for Girls' Power
+Pre-conception and Pre-Natal Diagnostic Techniques (Prohibition of Sex Selection) (PC&PNDT) Act, 1994 
+Sukanya Samriddhi Yojana
+Beti Bachao beti pacha.
+
+we can conclude that a Collective and multi-faceted approach involving government,
+communities, and families is essential to address the skewed gender ratio effectively and promote a balanced and equitable society.
