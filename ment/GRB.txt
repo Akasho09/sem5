@@ -7,12 +7,12 @@ and towards the end we will see , Govt Initiatives Addressing Gender Imbalance a
 
 slide-2
 Gender Ratio at Birth (GRB) I to the number of male live births for every 1000 female live births.
-we can also express it as Males per 1000 females or 
+we can also express it as feMales per 1000 males or 
 - Although we can express the gender ratio as females per 100 or even 10,  but then we see that reduces the precesion of the data.
 The natural GRB is slightly biased towards males, with an estimated ratio of 1.03 to 1.06 males per female.
-- This slight excess of male births is believed to balance out the higher mortality rates that males face throughout life like males are more 
-  susceptible to accidents and diseases and genetic disorders.
-- Other mechansisms nature has evolced is Differential Aging , which we can also see in the table.
+- This slight excess of male births is believed to balance out the higher mortality rates that males face throughout life 
+like males are more susceptible to accidents and genetic disorders.
+Bar Graphs  & bars
 Overall Ratio is 1020 females per males.
 
 slide -3 

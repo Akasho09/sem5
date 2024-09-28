@@ -1,0 +1,20 @@
+Hi, I'm Akash, and I come from Kashmir.
+I’ve always been fascinated by softwares, 
+and it led me to pursue a Bachelors specilized in Computer Engineering. 
+Currently, I’m at Jamia Millia Islamia, New Delhi, batch of 2022.
+As a passionate developer, 
+I have built a strong foundation in key technologies, including:
+Programming Languages: C,C++, JavaScript
+Backend: Node.js, Express.js
+Databases: MongoDB, SQL
+Frontend: ReactJS 
+Through my academic and personal projects, 
+I’ve gained hands-on experience across the entire tech stack. 
+
+What sets me apart is my proactive approach to learning and problem-solving. 
+I am committed to developing high-performance software and 
+am always looking for ways to optimize and innovate.
+
+I believe that my technical skills, combined with essential soft skills such as 
+teamwork, collaboration, conflict resolution, adaptability, and flexibility, 
+makes me a valuable asset to any team I work with.
