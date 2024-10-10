@@ -11,7 +11,7 @@ string text,ans;
 vector<int>v;
 getline(cin , input);
 string key;
-cin >>key;
+getline(cin , key);
 int j=0;
 
 for (int i=0;i<input.size();i++){
