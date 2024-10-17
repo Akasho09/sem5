@@ -42,4 +42,4 @@ To declare an interface, use the interface keyword. It is used to provide total 
 - Multiple inheritance in java is achieved using interfaces 
 interface Animal { void eats (); }
 interface Herbivorous { void eats () ;}
-class Horse extends Animal , Herbivorous {}
+class Horse implements Animal , Herbivorous {}

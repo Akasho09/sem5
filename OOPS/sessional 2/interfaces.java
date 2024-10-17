@@ -10,7 +10,7 @@ interface Animal {
       }
     }
     
-    public class i{
+    public class interfaces{
         public static void main (String arg[]) {
     
         }
