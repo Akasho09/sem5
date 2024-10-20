@@ -5,10 +5,8 @@ refers to a situation that causes a pipeline to stall or delay the execution of 
 3. Control Hazards
 
 # Data Hazards
-eg add $s0, $t0, $t1
-sub $t2, $s0, $t3
 Data hazards occur when the pipeline must be stalled because one step must wait for another to complete. 
-add $s0, $t0, $t1
+eg add $s0, $t0, $t1
 sub $t2, $s0, $t3
 
 IF ID EX| MEM WB
@@ -30,7 +28,7 @@ We can Determine the if branch cond at Decode (ie move branch execution earlier 
 A method of resolving a branch hazard that assumes a given outcome for the branch and proceeds from that assumption rather than waiting to ascertain the actual outcome.
 
 # Dynamic Branch Prediction 
-dynamic branch prediction Prediction of branches at runtime using runtime information.
+dynamic branch Prediction of branches at runtime using runtime information.
 One approach is to look up the address of the instruction to see if a branch was taken the last time this instruction was executed, and, if so, to begin fetching new instructions from the same place as the last time. This technique is called dynamic branch prediction. 
 One implementation of that approach is a branch prediction buffer or branch history table. A branch prediction buffer is a small memory indexed by the lower portion of the address of the branch instruction. Th e memory contains a bit that says whether the branch was recently taken or not.
 

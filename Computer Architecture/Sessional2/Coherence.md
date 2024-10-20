@@ -4,7 +4,7 @@ Cache coherence refers to the consistency and synchronization of data stored in 
 • Write-through: The cache controller writes to both the cache and main memory at the same time. it can slow down application performance.
 • Write-back: The cache controller writes to the cache only, and then moves the data to main memory or disk later.
 
-CC in Wrute-Through : Data is update in Pricate Cache 1 and Main Memory only but not in Private Cache ==> CC problem
+CC in Write-Through : Data is update in Private Cache 1 and Main Memory only but not in Private Cache ==> CC problem
 
 ![alt text](image.png) -- Cache Coherence 
 ![alt text](image-1.png)  -- Cache Coherence write through and write back  
@@ -22,10 +22,9 @@ A memory system is `Coherent` iff it returns the most recently updated value of 
 - invalidation ==> deletes the data in other private caches
 **Snoop-based C protocol** : For 4 or 8 core processprs
 A snoop-based protocol, also known as a `bus-snooping protocol`, is a method for maintaining cache coherency in a multiprocessor system. It uses a shared bus to connect all the caches and the main memory. When a processor writes to its cache, it broadcasts the address of the modified block to the bus. Other processors then check if they have a copy of the block and update or invalidate it as needed. 
--Controller updates state of all the cache blocks whenever a Cache transition occours.
-- States may be 
-• valid-exclusive − The block is the only copy of the memory block. The cache and memory blocks are consistent.
-• Shared − There are several cached copies of the memory block and all of them are consistent.
-• Dirty − It is the only copy of the memory block and the memory block is inconsistent.
+- Controller updates state of all the cache blocks whenever a Cache transition occours.
+**MSI**
+The MSI Protocol is a snooping-based coherence protocol used in multiprocessor systems with write-back caches. It uses three states: Modified (M), Shared (S), and Invalid (I), to maintain cache coherence when multiple processors access the same data.
+
 **Directory-based cache coherence protocol** 
 is a mechanism used to manage cache coherence in multicore systems. It uses a centralized directory to keep track of the state of each cache line across multiple caches. This approach helps ensure data consistency by maintaining a global view of which caches hold copies. 
