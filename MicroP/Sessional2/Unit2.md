@@ -16,7 +16,7 @@ Memory Mapped I/O is a technique in which an I/O device is mapped as memory itse
 • The instruction used are LDA and STA, etc.
 • Intel 8085, Motorola 6800 	
 • Any register can communicate with the IO device in case of Memory Mapped IO.	
-![alt text](image-1.png)
+![alt text](image-4.png)
 
 **Characteristics of Memory Mapped I/O**
 - Shared Address Space: I/O devices are carved out a particular memory space.
@@ -40,6 +40,7 @@ I/O Mapped I/O known as `Port Mapped I/O` or `Isolated I/O` uses dedicated addre
 • Separate Address Space: I/O devices are granted their own address space that is independent of the memory space of the computer.
 • Dedicated Instructions: Contains specific I/O instructions known as `IN` and `OUT`.
 • Distinct Port Addresses: I/O devices are connected to the computer and can only be addressed by specific port addresses.
+
 
 ## Types of Interfacing Devices:
 1. **I/O Ports (Input/Output Ports)**
@@ -100,5 +101,3 @@ Device	Function	                Key Features	                                  A
 8253	Timer	                    3 16-bit timers                                	Clock generation, delays
 8279	Keyboard/Display controller	Key scanning, debounce handling                 Keypads, 7-segment displays
 8087    Coprocessor	Math processor	Floating-point arithmetic                       Scientific computations
-
-
