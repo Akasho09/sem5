@@ -74,7 +74,8 @@ crosspoints
 Propagation delay = (LAN length / Propation speed) = 1000/2*10^8 = 50 * 10^-6
 Time to transmit 100 bits: 100bits/1Mbps = 100 * 10^-6 s ;
 Total = 150 micros
-In a whole cycle each user transmit for only 
+Let there are maximum N number of station then Length of cycle is N*150us
+In a whole cycle each user transmit for 10us only 
 Therefore efficiency is (100/150N)
 Throughput of each station (100/150N)*1 Mbps = 2/3N Mbps
 which is given as 1/3 Mbps = 2/3N => {N=2}
@@ -120,3 +121,24 @@ P1 = 5 ==> wrong
 P2 = 2
 P3 = 5 ==> wrong 
 1010 ==> 10th is wrong 
+
+# SWitching question 
+![alt text](<Screenshot 2024-10-24 at 10.35.50 PM.png>)
+
+# GoBackN ARQ protocol
+![alt text](<Screenshot 2024-10-24 at 11.51.37 PM.png>)
+
+# Consider a selective repeat sliding window protocol that uses a frame size ofl KB to send data on a 1.5 Mbps link with a one-way laiency of 50 msec. To achieve a link utulization ot U0, Caleulate the minimum number of bits required to represent the sequence number field?
+
+Sequence number >= Sender window size + Reciever Window size (2*SWS)
+use     n=SWS/(1+2a) find SWS 
+Log(2SWS)= no of bits req
+
+# Delay + propagation
+![alt text](<Screenshot 2024-10-25 at 12.21.42 AM.png>)
+
+# 
+Total time = Transmission-Time + 2* Propagation-Delay + Ack-Time.
+Throughput = L/Total Time
+           = 500/0.2
+           = 2500 bytes/sec.
