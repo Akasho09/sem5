@@ -21,3 +21,4 @@ It has a analogy to the caches memeory working in computer systems , where the u
 One of the Popular Technique Pomodoro Technique also works on somwewhat the same principle , In pomodoro technique what happens is we do a focused work for some period of time then we leave the tasks as its and take a break . As we leave the tasks unfinished , the brain creates a urge to complete the tasks , thereby motivating us again to do the same work . Thereby helping us to work longer and focused.
 
 One of the oldest tricks in the TV business for keeping viewers tuned into a serial week after week is the cliff-hanger. TV serials often end their episodes where the story is about to take a sudden turn, also known as cliff-hangers. You tune in next week for the resolution because the mystery is ticking away at the back of your mind and to complete the story in your mind.
+
