@@ -1,6 +1,6 @@
 interface Animal { 
     int eyes =2 ;
-    void eats ();
+    // void eats ();
      }
     interface Herbivorous { void eats (); }
     
