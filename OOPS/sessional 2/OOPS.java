@@ -1,4 +1,4 @@
-// no destructors are called , alresy taken care by java
+// no destructors are called , already taken care by java
 class Pen { // P is Capital convention
 String color; // S is capital in String
 int price;
