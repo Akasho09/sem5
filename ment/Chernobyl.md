@@ -2,7 +2,7 @@
 Chernobyl refers to the site basically where the Chernobyl disaster took place.
 It took place on April 26, 1986 and is considered one of most catastrophic nuclear disasters in history.
 
-- explosion and subsequent fires in Reactor 4 released large amounts of radioactive material into the atmosphere.
+there was explosion and subsequent fires in Reactor 4 released large amounts of radioactive material into the atmosphere.
 
 # Cause:
 
