@@ -1,49 +1,95 @@
-class Customer {
-    public double getDiscount() {
-        return 0.0; // Default discount
-    }
-}
+/*
+ * Create a base class. Customer with a method geiDiscount that provides a default discount (e.g., 0%). 
+ * Then, implement three subelasses: RegularCustomer (10% discount), PremiumCustomer (20% discount), and VIPCustomer (30% discount), 
+ * Use runtime polymorphism to dynamically determine and apply the appropriate discount based on the actual customer type, 
+ * calculating the final price accordingly.
+*/
 
-class RegularCustomer extends Customer {
-    @Override
-    public double getDiscount() {
-        return 10.0; // 10% discount
-    }
-}
+ class Customer {
 
-class PremiumCustomer extends Customer {
-    @Override
-    public double getDiscount() {
-        return 20.0; // 20% discount
+    int getDiscount(int totalPrice){
+        return 0;
     }
-}
+ }
 
-class VIPCustomer extends Customer {
-    @Override
-    public double getDiscount() {
-        return 30.0; // 30% discount
+ class RegCustomer extends Customer {
+
+    int getDiscount(int totalPrice) {
+        return totalPrice*9/10;
     }
-}
+ }
+
+ class VIPCustomer extends Customer {
+
+    int getDiscount (int f) {
+        return f*4/5;
+    }
+ }
 
 public class s22 {
-    public static void main(String[] args) {
-        // Array of different types of customers
-        Customer[] customers = {
-            new RegularCustomer(),
-            new PremiumCustomer(),
-            new VIPCustomer()
-        };
+    public static void main (String[] arg ) {
+        RegCustomer r1 = new RegCustomer();
+        int finalPrice = r1.getDiscount(1000);
+        System.out.println(finalPrice);
 
-        double basePrice = 1000.0; // Example base price
+        Customer[] customers = new Customer[3] ;
+        customers[0]= new RegCustomer();
+        int fp1 = customers[0].getDiscount(2000);
+        customers[1]= new VIPCustomer();
+        int fp2 = customers[1].getDiscount(2000);
+        System.out.println(fp1);
+        System.out.println(fp2);
 
-        // Calculate final price for each customer type
-        for (Customer customer : customers) {
-            double discount = customer.getDiscount();
-            double finalPrice = basePrice * (1 - discount / 100);
-            System.out.println("Final Price for " + customer.getClass().getSimpleName() + ": " + finalPrice);
-        }
     }
 }
+
+
+// class Customer {
+//     public double getDiscount() {
+//         return 0.0; // Default discount
+//     }
+// }
+
+// class RegularCustomer extends Customer {
+//     @Override
+//     public double getDiscount() {
+//         return 10.0; // 10% discount
+//     }
+// }
+
+// class PremiumCustomer extends Customer {
+//     @Override
+//     public double getDiscount() {
+//         return 20.0; // 20% discount
+//     }
+// }
+
+// class VIPCustomer extends Customer {
+//     @Override
+//     public double getDiscount() {
+//         return 30.0; // 30% discount
+//     }
+// }
+
+// public class s22 {
+//     public static void main(String[] args) {
+//         // Array of different types of customers
+//         Customer[] customers = {
+//             new RegularCustomer(),
+//             new PremiumCustomer(),
+//             new VIPCustomer()
+//         };
+
+//         double basePrice = 1000.0; // Example base price
+
+//         // Calculate final price for each customer type
+//         for (Customer customer : customers) {
+//             double discount = customer.getDiscount();
+//             double finalPrice = basePrice * (1 - discount / 100);
+//             System.out.println("Final Price for " + customer.getClass().getSimpleName() + ": " + finalPrice);
+//         }
+//     }
+// }
 
 
 // interface Customers {

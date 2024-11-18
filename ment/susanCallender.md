@@ -12,4 +12,4 @@ which is social syncronicity along with ettiquates .
 she shares 3 tips to stay above fray :
 1. use peoples names : people love the sound of their names .
 2. unplug with social media and phones and connect , link and sync with the people around you .
-3. be kind ,friendly and confident .
+3. be kind ,friendly and confident.
