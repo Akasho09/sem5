@@ -15,5 +15,24 @@ is a member function in the base class that can be overridden by a derived class
 ## A pure virtual function 
 is a function that is declared in the base class but has no implementation in the base class itself. Instead, it is meant to be overridden by derived classes. A class that contains at least one pure virtual function is called an abstract class, which cannot be instantiated.
 
+## Friend Function
+is a non-member function that has been granted access to the private and protected members of a class. This allows the function to directly access the class's internal data, even though it's not a part of the class itself.
 
+## Friend Class 
+A friend class grants another class access to its private and protected members. This is useful when two classes are tightly related and need to share internal details.
+
+## static data member 
+A static data member is shared across all instances of a class. It is not unique to each object.
+- Static members are allocated memory only once, at the class level, not at the object level.
+- int classname :: count = 0;
+
+## Static member function
+Access to Static Members Only:
+Static member functions can access only static data members or other static member functions.
+- They cannot access non-static members directly.
+-     static int getCircleCount() {
+        return count;
+    }
+
+## Dynamic Initialization Through Constructors
 
