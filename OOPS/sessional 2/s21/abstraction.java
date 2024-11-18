@@ -1,6 +1,5 @@
 
 abstract class Animal {
-
    abstract public void speak(); //  abstract method doesnt specify a body
 }
 

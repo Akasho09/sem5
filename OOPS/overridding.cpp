@@ -9,6 +9,9 @@ void overriddenfunc() {
 virtual void overriddenvirtualfuc (){
         cout << "base class virtual func called \n" ;
 }
+void basefn () {
+    cout <<"only in base\n" ;
+}
 
 };
 
@@ -29,6 +32,12 @@ b.overriddenfunc();
 derived d;
 d.overriddenfunc();
 cout <<endl;
+
+base * d1 = new derived() ;
+d1->overriddenfunc();
+d1->overriddenvirtualfuc();
+d1->basefn() ;
+cout <<endl ;
 
 base *bptr;
 bptr= &b;

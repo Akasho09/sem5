@@ -71,6 +71,7 @@ car *alto=new car; //creating object dynamically -- car *alto=new car();
 alto->price=1000;
 (*alto).brandname="altobrandA";
 alto->setmp(1000,"altobrandA@123");
+    cout << "size of alto car : " <<(&alto) <<endl;
 
 delete alto; //manually calling destructor for object alto
 return 0;

@@ -18,6 +18,7 @@ temF(float t){
     this->t=t;
 }
 //overloading operator () to convert F to C 
+// returns obj of celcius 
 temC operator() (){
 temC t1(0);
 t1.t=(1.8)*this->t+32;
