@@ -16,9 +16,7 @@ class weight {
 int kg;
 int g;
 public:
-weight(){
-
-}
+weight(){}
 weight (int kilos, int grams){
 kg=kilos;
 if (grams>1000){
@@ -28,18 +26,21 @@ if (grams>1000){
 else g=grams;
 }
 void display() {
-    cout <<kg << " kg " <<g << " grams " <<endl;
+    cout <<kg << " kg " <<"and" <<g  << " grams " <<endl;
 }
 friend istream & operator>> (istream &cin ,weight &w);
 friend ostream & operator<< (ostream &o, weight &w);
 };
 
 istream& operator>> (istream & i ,weight &w){
-cin >> w.kg >> w.g;
+cout << "Input Kgs \n" ;
+cin >> w.kg;
+cout << "Input Grams \n" ;
+cin >> w.g;
 return i;
 }
 ostream& operator<< (ostream & o, weight &w){
-    o <<w.kg << " kg " << w.g <<" grams " <<endl;
+    o <<w.kg << " kg " <<"and " << w.g <<" grams " <<endl;
     return o;
 }
 

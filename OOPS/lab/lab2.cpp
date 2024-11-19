@@ -23,7 +23,6 @@ this->number=num;
 }
  ~employee () {
  cout << "-----Deconstructor called employee------\n" ;
- 
  }
   } ;
   

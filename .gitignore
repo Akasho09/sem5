@@ -9,3 +9,5 @@
 
 # Include .md files
 !*.md
+
+tempCodeRunnerFile*.cpp 
