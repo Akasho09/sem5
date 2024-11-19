@@ -8,6 +8,10 @@ interface Pet {
  int Price() ;
 }
 
+interface n extends Pet , Animal {
+    
+}
+
 class Cat implements Animal , Pet {
     int eyes = 3; 
    // Cannot reduce the visibility of the inherited method from AnimalJava(67109273)

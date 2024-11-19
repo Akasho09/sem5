@@ -1,1 +1,11 @@
-*.out
+# Ignore everything
+*
+
+# Don't ignore directories
+!*/
+
+# Include .cpp files
+!*.cpp
+
+# Include .md files
+!*.md

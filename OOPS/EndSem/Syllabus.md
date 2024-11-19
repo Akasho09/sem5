@@ -24,13 +24,9 @@
 - Pointers to Objects
 - Array of Objects
 - this Pointer
--  Self-Referential Classes
+- Self-Referential Classes
 
-
-
-Unit 2: Implementing Polymorphism in C++: Overloading
-
-Topics:
+# Unit 2: Implementing Polymorphism in C++: Overloading
 
 Function and Operator Overloading
 
@@ -48,7 +44,7 @@ Overloading through Friend Functions
 
 Tracing of Memory Leaks
 
-Number of Classes: 8
+
 
 Unit 3: Inheritance and Virtual Functions
 

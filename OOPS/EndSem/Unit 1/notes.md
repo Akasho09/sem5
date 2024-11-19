@@ -35,4 +35,10 @@ Static member functions can access only static data members or other static memb
     }
 
 ## Dynamic Initialization Through Constructors
+Dynamic initialization of object refers to initializing the objects at a run time i.e., the initial value of an object is provided during run time.
 
+
+## pointer to an object 
+is a pointer variable that stores the memory address of an object. Pointers to objects are particularly useful in scenarios where objects need to be dynamically allocated or passed around efficiently in a program.
+
+## Array of Objects
