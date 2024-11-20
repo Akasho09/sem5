@@ -28,13 +28,13 @@
 
 # Unit 2: Implementing Polymorphism in C++: Overloading
 
-Function and Operator Overloading
+- Function and Operator Overloading
 
-Overloading of Unary and Binary Operators
+- Overloading of Unary and Binary Operators
 
-Limitations of Overloading Increment and Decrement Operators
+- Limitations of Overloading Increment and Decrement Operators.
 
-Overloading of Arithmetic, Relational, Assignment, new and delete, Subscript Operators
+- Overloading of Arithmetic, Relational, Assignment, new and delete, Subscript Operators
 
 Data Conversion between Objects
 
@@ -46,35 +46,31 @@ Tracing of Memory Leaks
 
 
 
-Unit 3: Inheritance and Virtual Functions
+# Unit 3: Inheritance and Virtual Functions
 
-Topics:
+- Declaration of Derived Class
 
-Declaration of Derived Class
+- Forms of Inheritance
 
-Forms of Inheritance
+- Constructors and Destructors in Derived Classes
 
-Constructors and Destructors in Derived Classes
+- Types of Inheritance
 
-Types of Inheritance
+- Abstract Class
 
-Abstract Class
+- Virtual Functions:
 
-Virtual Functions:
+- Need of Virtual Functions
 
-Need of Virtual Functions
+- Pointers to Derived Class Objects
 
-Pointers to Derived Class Objects
+- Pure Virtual Functions
 
-Pure Virtual Functions
+- Virtual Destructors
 
-Virtual Destructors
+- Rules of Writing Virtual Functions
 
-Rules of Writing Virtual Functions
-
-Number of Classes: 8
-
-Unit 4: Object-Oriented Programming Using Java
+# Unit 4: Object-Oriented Programming Using Java
 
 Classes, objects, and constructors in Java
 

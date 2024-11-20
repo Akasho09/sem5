@@ -9,6 +9,8 @@ class Shape {
     virtual void Area () = 0 ;
     virtual void Perimeter () = 0 ;
 };
+- Abstract classes can also have concrete methods with full implementations that can be inherited by derived classes.
+
 ## A virtual function 
 is a member function in the base class that can be overridden by a derived class. It allows derived classes to provide their own implementation of the function, while still maintaining the ability to call it via base class pointers or references.
 

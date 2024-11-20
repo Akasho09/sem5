@@ -3,9 +3,11 @@ using namespace std ;
 
 class Shape {
     public :
-    virtual void Area () = 0 ;
+    virtual void Area () = 0 ; // Pure virtual function
     virtual void Perimeter () = 0 ;
-    
+    void concreteMethod () {
+    cout << "hi" ;
+    }
     /*
     In the example above, Area() is a pure virtual function because it is followed by = 0, and this class becomes abstract.*/
 };
