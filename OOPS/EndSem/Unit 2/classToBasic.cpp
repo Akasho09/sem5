@@ -5,7 +5,7 @@ class Number {
 int a;
 public :
 Number (int b) {
-a=b;
+this->a=b;
 }
 // writing this we also cout <<obj directly
 operator int() {

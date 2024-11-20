@@ -72,7 +72,7 @@ Tracing of Memory Leaks
 
 # Unit 4: Object-Oriented Programming Using Java
 
-Classes, objects, and constructors in Java
+Classes, objects, and constructors in Java.
 
 Implementing inheritance and polymorphism: dynamic binding, method overriding
 
@@ -94,4 +94,4 @@ Packages:
 
 Defining, creating, and accessing a package
 
-Importing packages
+Importing packages.
