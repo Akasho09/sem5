@@ -17,3 +17,4 @@ then w = xyz
 ## Regular expression to DFA Conversion
 break expression by multiplication.
 
+## (a+b)^*=??
