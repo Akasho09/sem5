@@ -6,8 +6,10 @@
 
 # Include .cpp files
 !*.cpp
+!*.java
 
 # Include .md files
 !*.md
+!*.txt
 
 tempCodeRunnerFile*.cpp 
