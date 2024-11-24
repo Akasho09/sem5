@@ -11,7 +11,6 @@
 $2 and $3 store unsigned values.
 
 
- 
 
 "Logical" :
 Instruction	Example	Meaning	Comments

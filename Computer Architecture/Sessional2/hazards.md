@@ -4,6 +4,14 @@ refers to a situation that causes a pipeline to stall or delay the execution of 
 2. Structural Hazard
 3. Control Hazards
 
+# structural hazard. 
+It means that the hardware cannot
+support the combination of instructions that we want to execute in the same clock
+cycle. A structural hazard in the laundry room would occur if we used a washer-
+dryer combination instead of a separate washer and dryer, or if our roommate was
+busy doing something else and wouldn’t put clothes away. Our carefully scheduled
+pipeline plans would then be foiled.
+
 # Data Hazards
 Data hazards occur when the pipeline must be stalled because one step must wait for another to complete. 
 eg add $s0, $t0, $t1
@@ -11,6 +19,15 @@ sub $t2, $s0, $t3
 
 IF ID EX| MEM WB
    IF ID|-> EX MEM WB
+
+overcome :
+1. FORWARDING : forwarding Also called bypassing. A method of resolving a data hazard by retrieving the missing data element from internal buffers rather
+than waiting for it to arrive from programmer- visible registers or memory.
+
+-  Load word is available after Memory cycle is executed .
+-  Add is available after Execute only .
+![alt text](<Screenshot 2024-11-24 at 5.55.38 PM.png>) 
+![alt text](<Screenshot 2024-11-24 at 5.50.15 PM.png>) 
 # control hazard
 The third type of hazard is called a control hazard, arising from the need to make a decision based on the results of one instruction while others are executing.
 (also called a branch hazard) is a type of hazard in computer architecture that occurs when the processor encounters a branch instruction and cannot determine the next instruction to execute. This hazard arises in pipelined processors, where multiple instructions are processed simultaneously, and the correct path of execution depends on the outcome of a branch 
@@ -19,7 +36,7 @@ The third type of hazard is called a control hazard, arising from the need to ma
 
 eg { bnez R , 2000 } ==> Branch when value in R isnt equal to 0 
 Consider a pipeline with `five` stages: 
-Fetch (IF) Decode (ID) Execute (EX) Memory Access (MEM) Write Back (WB)
+- Fetch (IF) Decode (ID) Execute (EX) Memory Access (MEM) Write Back (WB)
 At WB we get the confirmation to branch or not , till then I2(4 Stages), I3(3 stages) ,I4(2 stages) & I5(1 stage) have alresdy executed.
 Now if we have to branch , we have to flush out all these instructions.
 We can Determine the if branch cond at Decode (ie move branch execution earlier ) and reduce the flush , `Stalling` the next instructions first stage.
@@ -38,7 +55,6 @@ bit for this branch remains in the prediction buffer?  {80%}
 
 Ideally, the accuracy of the predictor would match the taken branch frequency for
 these highly regular branches. To remedy this weakness, 2-bit prediction schemes
-are often used. In a 2-bit scheme, a prediction must be wrong twice before it is changed.
+are often used. In a `2-bit scheme`, a prediction must be wrong twice before it is changed.
 **Scheduling the branch delay slot.** The slot directly after a delayed branch instruction, which in the
 MIPS architecture is filled by an instruction that does not affect the branch.
-

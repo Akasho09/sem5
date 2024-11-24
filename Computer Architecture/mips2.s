@@ -39,6 +39,7 @@ loop:
     addi $t0, $t0, 1           # i = i + 1
     sll $t1 ,$t0 ,2            ; (i+1 )*4
     add $t1 , $s0 ,$t1         ;t1 is address of A[i+1] , 4(i+1)+A
+    lw   $t5, 0($t1)           # Load A[i+1] into $t1
     sw   $t5, 0($t2)           # Store A[i+1](register) into A[i] (memory)
     j    loop                  # Jump back to the start of the loop
 

@@ -1,3 +1,9 @@
+## MIPS functions 
+
+
+
+
+
 MIPS (Microprocessor without Interlocked Pipelined Stages) :
 is a family of reduced instruction set computer (RISC) instruction set architectures (ISA)
 developed by MIPS Computer Systems, now MIPS Technologies, based in the United States.
@@ -96,7 +102,7 @@ e.g ~SUB $2, $8, $3  ===  000000 01000 00011 00010 00000 100010   ---> Subtract 
 Opcode  31st to 26th  --6 bits
 Source register  21st to 25th --5
 Destination register 16th to 20th --5
-Immediate data  0th to 15th  --16 bits
+Immediate data  0th to 15th  --16 bits  -- offset value,
 
 e.g ~lw $t0 , 4($s3)  ---load data at $s3+4 to t0 reg  ==== 000110 10001 01000 00000000000000100
 
@@ -116,8 +122,8 @@ jr $register  ---- after jal
 
 "MIPS Instruction Execution ":
 1. Single cycle Execution:
-- Each MIPS instruction is executed in 1 fixed clock cycle.
-- slowest cycle is chosen . so there is time wastage .
+Each MIPS instruction is executed in 1 fixed clock cycle.
+slowest cycle is chosen . so there is time wastage .
 
 
 2. Multi - Cycle Execution:
@@ -131,7 +137,6 @@ maximum resource utilization.
 | Fetch | Decode | Execute | Memory | WriteBack 
         | Fetch | Decode | Execute | Memory | WriteBack 
                 | Fetch | Decode | Execute | Memory | WriteBack .
-
 
 
                https://www.youtube.com/watch?v=tSHPMMcxmio&list=PLOq2ARxtuVPiBd5oPNXLZMd12QSumFMDw&index=2

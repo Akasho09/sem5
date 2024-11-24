@@ -1,4 +1,6 @@
 # PDA 
+A Pushdown Automaton (PDA) is a formal computational model used to recognize Context-Free Languages (CFLs). It extends the concept of a finite automaton by incorporating a stack as an auxiliary storage mechanism.
+
 
 ## Examples 
 
