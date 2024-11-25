@@ -3,7 +3,6 @@
 
 
 
-
 MIPS (Microprocessor without Interlocked Pipelined Stages) :
 is a family of reduced instruction set computer (RISC) instruction set architectures (ISA)
 developed by MIPS Computer Systems, now MIPS Technologies, based in the United States.

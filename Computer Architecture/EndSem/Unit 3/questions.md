@@ -27,6 +27,12 @@ MUL R1, R4, R5   # Instruction 2: R1 = R4 * R5
 
 # What is the function of hazard detection unit? Write and elaborate the technique used to detect Read-after-Write hazard.
 ---
+The Hazard Detection Unit (HDU) is a crucial component of a pipelined processor designed to identify and resolve data hazards dynamically. Its primary functions include:
+
+- Vertical units before ALU muxes , DM , after DM. Connect 2 to Forwarding unit (Other 2 are from Reg file and 3 ops to Muxes ) , 2 to Muxes before ALU . 
+
+
+
 Function of the Hazard Detection Unit: 
 The Hazard Detection Unit (HDU) is a crucial component of a pipelined processor designed to identify and resolve data hazards dynamically. Its primary functions include:
 - Detecting Hazards:

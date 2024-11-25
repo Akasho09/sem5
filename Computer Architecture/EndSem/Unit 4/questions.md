@@ -2,10 +2,18 @@
 
 ##
 `Convoy`: A convoy is a set of vector instructions that can begin execution in the same clock cycle, assuming no data dependencies or structural hazards exist between them. These instructions operate independently and can be processed together in a single execution phase of the vector processor​
+LV V1, R1 ; Load vector elements from memory to register V1
+LV V2, R2 ; Load vector elements from memory to register V2
+ADDV V3, V1, V2 ; Perform vector addition
+SV R3, V3 ; Store result vector into memory
+
+Convoy 1: Contains the two load instructions (LV V1, R1 and LV V2, R2), which can execute in parallel if the memory subsystem supports it.
+Convoy 2: Contains the ADDV instruction, which depends on the results of the loads.
+Convoy 3: Contains the SV instruction, which stores the results of the addition back to memory
 
 `Chaining`: Chaining is a technique that allows the output of one vector operation to directly feed into another vector operation without waiting for the entire result to be computed. For example, the results of a vector multiplication can immediately be used by a subsequent vector addition operation, improving overall performance by overlapping operations​
 
-`Chime`: A chime represents the approximate time taken to execute a convoy of vector instructions. It serves as a timing measure for the execution of a sequence of vector operations. The total execution time for a vector sequence is calculated as the product of the number of convoys (measured in chimes) and the vector length, accounting for the time to execute each convoy​
+`Chime`: A chime represents the approximate time taken to execute a convoy of vector instructions. It serves as a timing measure for the execution of a sequence of vector operations. The total execution time for a vector sequence is calculated as the product of the number of convoys (measured in chimes) and the vector length, accounting for the time to execute each convoy.​
 
 
 ## Strip Mining 

@@ -42,6 +42,7 @@ Conditional Branch
 All conditional branch instructions compare the values in two registers together. If the comparison test is true, the branch is taken (i.e. the processor jumps to the new location). Otherwise, the processor continues on to the next instruction.
 
 Instruction	Example	Meaning	Comments
+`bltz $t1 , loop_end` -  branch on less than zero
 'branch on equal'	beq $1,$2,100	if($1==$2) go to PC+4+100	Test if registers are equal
 'branch on not equal'	bne $1,$2,100	if($1!=$2) go to PC+4+100	Test if registers are not equal
 'branch on greater than'	bgt $1,$2,100	if($1>$2) go to PC+4+100	Pseduo-instruction

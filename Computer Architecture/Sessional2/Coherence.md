@@ -9,11 +9,11 @@ CC in Write-Through : Data is update in Private Cache 1 and Main Memory only but
 ![alt text](image.png) -- Cache Coherence 
 ![alt text](image-1.png)  -- Cache Coherence write through and write back  
 
-A memory system is `Coherent` iff it returns the most recently updated value of a data item  or 
+### A memory system is `Coherent` iff it returns the most recently updated value of a data item  or 
 1. `Write N , X (i)` ie Write N to X in a n-core device by ith core .
     `Read X (i)`
-2. `Write N , X (j) `
-    `Read X (i)`
+2.  `Read X (i)`
+    `Write N , X (j)`
 3. `Write N ,x (i)` 
    `Write N ,x (j)`
 
