@@ -18,3 +18,7 @@ then w = xyz
 break expression by multiplication.
 
 ## (a+b)^*=??
+
+
+### number of 0s is a multiple of 3
+1*|(1*01*01*01)*

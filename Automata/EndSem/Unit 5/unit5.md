@@ -76,7 +76,7 @@ The **Halting Problem** asks:
 > Does a given TM halt on a particular input?  
 
 ---
-
+n
 # **Unsolvable Problems about Turing Machines**  
 
 1. **Halting Problem**: As mentioned above.  
