@@ -8,9 +8,11 @@
 !*.cpp
 !*.java
 
+
 # Include .md files
 !*.md
 !*.txt
+!*.yaml
 
 tempCodeRunnerFile*.cpp 
     
