@@ -1,25 +1,15 @@
 # Automata (plural of automaton) 
-
 refers to abstract machines or mathematical models that are used to understand and simulate computational processes.
 
 ## Finite Automata (FA) 
-
 A Finite Automaton is a mathematical model consisting of:
-
-- A finite set of states.
-- A finite set of input symbols (alphabet).
-- A transition function that maps a state and an input symbol to another state.
-- One initial state.
-- A set of final (accepting) states.
 - A Finite Automaton is a 5-tuple:
-
 **M = (Q, Σ, δ, q₀, F):**
-
 - **Q**: A finite set of states.
 - **Σ**: A finite set of input symbols (alphabet).
-- **δ**: A transition function \δ= Q*Σ.
+- **δ**: A transition function {δ= Q*Σ}
 - **q₀**: The initial state (\( q₀ \in Q \)).
-- **F**: A set of final (accepting) states (\( F \subseteq Q \)).
+- **F**: A set of final (accepting) states (( F subseteq Q )).
 
 ## Strings, Alphabets, and Languages
 
@@ -67,6 +57,10 @@ Easier to construct but harder to implement directly.
 
 - Equivalence: Every NFA has an equivalent DFA.
 
+- Epsilon NEA (NFA)
+epsilon NFA 1s he NEA LJuch centoins epsilon moves
+Null moves
+
 ## "kleen closure" :
 
 L*:is Kleene Closure. L+: It is a Positive Closure => L* = εL+
@@ -101,3 +95,6 @@ If the minimized DFAs are structurally identical, the machines are equivalent.
 Simulate both machines on all possible input strings.
 Compare outputs for each input string.
 Alternatively, convert a Mealy machine into an equivalent Moore machine (or vice versa) and compare.
+
+
+![alt text](<Screenshot 2024-11-27 at 10.30.53 AM.png>)

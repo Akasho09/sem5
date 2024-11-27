@@ -127,3 +127,6 @@ A problem is **NP-complete** if:
 
 ---
 
+![alt text](<Screenshot 2024-11-26 at 7.48.32 PM.png>)
+![alt text](<Screenshot 2024-11-26 at 7.31.48 PM.png>)
+![alt text](<Screenshot 2024-11-26 at 6.31.58 PM.png>)

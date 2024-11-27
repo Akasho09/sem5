@@ -48,3 +48,6 @@ Step	CurrentState	Input (Remaining)	Stack (Top to Bottom)	Transition Applied
 1. **Complexity**: The resulting PDA may be harder to understand or implement due to indirect transitions.
 2. **Stack Growth**: For deeply nested structures, the stack can grow large, making computation inefficient.
 3. **Non-Determinism**: The PDA may require non-deterministic transitions, complicating simulation.
+
+![alt text](<Screenshot 2024-11-26 at 11.08.24 PM.png>)
+![alt text](<Screenshot 2024-11-26 at 10.28.21 PM.png>)
