@@ -42,28 +42,29 @@ A Non-deterministic TM can explore multiple computational paths simultaneously.
 
 ---
 
-# **Church's Thesis**  
-
-Church's Thesis, or the Church-Turing Hypothesis, states that:  
-
-> Any computational problem solvable by an algorithm can be computed by a Turing Machine.  
-
-It establishes the TM as the ultimate model of computation.  
-
+### Church's Thesis
+Definition: Church's Thesis (or Church-Turing Thesis) asserts that any function that can be effectively computed (intuitively, by an algorithm) can be computed by a Turing Machine.
+Implications:
+Equates computability with what Turing Machines can achieve.
+Forms the basis of modern computational theory.
+- Unproven Hypothesis: While widely accepted, it is not formally provable since it relies on the informal notion of "effective computability."
 ---
 
 # **Universal Turing Machines (UTMs)**  
 
-A UTM is a TM that can simulate any other TM by encoding its description and input on the tape.  
-
-- Takes a pair \( \langle M, w \rangle \) as input, where \( M \) is a TM and \( w \) is the input for \( M \).  
-- Demonstrates the concept of programmability and forms the foundation for modern computers.  
+Definition: A Universal Turing Machine is a Turing Machine that can simulate any other Turing Machine. It achieves this by taking as input the description of a machine and the input for that machine.
+Significance:
+Demonstrates the versatility of Turing Machines.
+Forms the theoretical basis for general-purpose computers.
 
 ---
 
 # **Primitive Recursive Functions**  
 
-- A class of functions built from basic functions (zero, successor, projection) using composition and primitive recursion.  
+- A class of functions built from basic functions 
+(zero(A constant function that always outputs zero, regardless of the input), 
+successor (A unary function that outputs the successor of its input)
+, projection (Extracts the k-th argument from an n-tuple of inputs)) using composition and primitive recursion.  
 - Examples: Addition, multiplication, factorial.  
 - These functions are computable but do not include all computable functions (e.g., Ackermann's function).  
 

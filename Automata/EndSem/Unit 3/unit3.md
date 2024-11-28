@@ -124,7 +124,104 @@ According to Chomsky hierarchy, grammar is divided into 4 types as follows:
 
 ![alt text](image.png)
 
+# Chomsky Classification of Languages
 
+The **Chomsky Hierarchy** classifies formal languages into four types, based on the type of grammar and computational model required to generate or recognize them.
+
+---
+
+## **Type-0: Recursively Enumerable Languages**
+
+- **Grammar:** *Unrestricted Grammar*
+    - Production rules are of the form:
+
+      ```
+      α → β
+      ```
+
+      where `α` and `β` are strings of terminals and/or non-terminals, and `α ≠ ε` (empty string).
+    - No restrictions on the structure of rules.
+- **Automaton:** *Turing Machine*
+    - Recognizes all computable languages.
+    - May not halt for some inputs.
+- **Characteristics:**
+    - Most general class of languages.
+    - Some languages may be undecidable.
+
+### Example:
+
+A grammar for the language \( L = \{a^n b^n c^n d^n \mid n \geq 1\} \):
+
+---
+
+## **Type-1: Context-Sensitive Languages**
+
+- **Grammar:** *Context-Sensitive Grammar*
+    - Production rules are of the form:
+
+      ```
+      αAβ → αγβ
+      ```
+
+      where `A` is a non-terminal, and `γ` is a non-empty string.
+    - The length of the right-hand side (`γ`) is always greater than or equal to the left-hand side (`αAβ`).
+- **Automaton:** *Linear Bounded Automaton* (Turing Machine with bounded tape length).
+- **Characteristics:**
+    - Subset of Type-0 languages.
+    - Recognizable in finite space.
+    - No ambiguity arises from rules being dependent on context.
+
+### Example:
+
+A grammar for the language \( L = \{a^n b^n c^n \mid n \geq 1\} \):
+
+
+
+---
+
+## **Type-2: Context-Free Languages**
+
+- **Grammar:** *Context-Free Grammar*
+    - Production rules are of the form:
+
+      ```
+      A → γ
+      ```
+
+      where `A` is a single non-terminal, and `γ` is a string of terminals and/or non-terminals.
+- **Automaton:** *Pushdown Automaton* (uses a stack for memory).
+- **Characteristics:**
+    - Subset of Type-1 languages.
+    - Commonly used in programming language parsers and compilers.
+
+### Example:
+
+A grammar for the language \( L = \{a^n b^n \mid n \geq 0\} \):
+
+
+
+---
+
+## **Type-3: Regular Languages**
+
+- **Grammar:** *Regular Grammar*
+    - Production rules are of the form:
+
+      ```
+      A → aB
+      A → a
+      ```
+
+      where `A` and `B` are non-terminals, and `a` is a terminal.
+- **Automaton:** *Finite Automaton* (no additional memory apart from states).
+- **Characteristics:**
+    - Subset of Type-2 languages.
+    - Can be represented using regular expressions.
+    - Efficiently implementable for tasks like lexical analysis.
+
+### Example:
+
+A grammar for the language \( L = \{a^n b^m \mid n, m \geq 0\} \):
 
 # Simplifying Context Free Grammars
 
@@ -194,7 +291,6 @@ where S0 is the new start symbol.
 - unit ==> 
 
     if C-> B ==> replace B with what B tends to iff B doesnt tend to other unit pair.
-
 - and useless productions ==> remove non-genertaing symbols.
 
 3. Eliminate terminals from RHS if they exist with other terminals or non-terminals. 
