@@ -13,6 +13,9 @@
 !*.md
 !*.txt
 !*.yaml
+!*.asm
+!*.s
+
 
 tempCodeRunnerFile*.cpp 
     
