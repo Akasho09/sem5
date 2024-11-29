@@ -20,19 +20,6 @@ JNZ outerloop
 HLT
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 ; LXI H, 0000H
 ; L3: MOV B,M
 ; MOV C,B

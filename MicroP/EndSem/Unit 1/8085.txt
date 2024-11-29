@@ -58,8 +58,7 @@ Example: SHLD 4000H (Store H and L registers to memory address 4000H)
 Example: LDAX B (Load the accumulator with data from the memory location pointed by register pair BC)
 'STAX': Stores the contents of the accumulator indirectly through a register pair.
 Example: STAX D (Store the contents of the accumulator into the memory location pointed by register pair DE)
-'XCHG': Exchanges the contents of the H-L pair with the D-E pair.
-Example: XCHG (Exchange contents of HL with DE)
+The `XCHG` instruction in the 8085 microprocessor is used to exchange the contents of the HL and DE register pairs.
 
 2. Arithmetic Instructions
 ADD: Adds the contents of a register to the accumulator.
@@ -78,7 +77,7 @@ Example: DCR E (Decrement register E by 1)
 Example: INX H (Increment the HL register pair by 1)
 'DCX': Decrements a register pair by 1.
 Example: DCX B (Decrement the BC register pair by 1)
-DAD: Adds a register pair to the HL pair.
+`DAD`: Adds a register pair to the HL pair.
 Example: DAD B (Add BC register pair to HL register pair)
 CMA: Complements the contents of the accumulator (bitwise NOT).
 Example: CMA (Complement the accumulator)
@@ -102,8 +101,10 @@ Example: CMP A (Compare register A with the accumulator)  => if [A]>[B] =>CARRY=
 Example: CPI 0AH (Compare immediate value 0AH with the accumulator)
 RLC: Rotates the accumulator left through carry.
 Example: RLC (Rotate the accumulator left through carry)
-RRC: Rotates the accumulator right through carry.
-Example: RRC (Rotate the accumulator right through carry)
+The `RAR` (Rotate Accumulator Right through Carry) instruction in the 8085 microprocessor rotates 
+the contents of the accumulator (A) right by one bit through the Carry Flag (CY). It is a single-byte instruction.
+
+
 
 4. Branching Instructions
 'JMP': Unconditional jump to a specified address.

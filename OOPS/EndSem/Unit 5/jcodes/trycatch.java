@@ -1,7 +1,7 @@
 
 
 
-public class m{
+public class trycatch{
 
     static void checkage (int a) {
         if (a<18) {
@@ -12,18 +12,22 @@ public class m{
           }
     }
     public static void main (String[] arg) {
-        int[] array = {1, 2, 3};
+        int array[] = new int[5];
         try {
+            int r = 3/0;
             System.out.println(array[10]);   
         }
-        catch (Exception e){
-            System.out.println("Something went wrong.");
+        catch (ArrayIndexOutOfBoundsException e){
+            System.out.println("Array size is lesser \n "  + e.getMessage());
+        }
+        catch (ArithmeticException e){
+            System.out.println("ArithmeticException \n ----- "  + e.getMessage() + "\n" + e.getStackTrace() );
         }
         finally {
             System.out.println("The 'try catch' is finished.");
         }
 
-        checkage(15); // Set age to 15 (which is below 18...)
+        // checkage(15); // Set age to 15 (which is below 18...)
         System.out.println("this wouldnt execute if age<18.");
 
     }
