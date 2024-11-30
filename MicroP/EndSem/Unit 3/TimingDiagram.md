@@ -63,7 +63,7 @@ RD(bar) ==> 1 Throughout , except at loadings of data ie at T2 and T5
 
 # Timing Diagram of STA
 
-4T(Fetch)+3T(M read)+3T(M write)+3T(M read) = 13T
+4T(Fetch)+3T(M read)+3T(M read)+3T(M write) = 13T
 
 Eg : STA 3000H
 
@@ -98,7 +98,9 @@ Eg : STA 3000H
 +3T for Memory Read  2000   [2000]   3TCC   Like in STA 3000H
 
 # SHLD 5140H
+
 ![alt text](image-3.png)
+
 L -> [5140H], H -> [5141H]
 
 | **Machine Cycle** | **Address Bus** | **Data Bus**                | **T-States** |
