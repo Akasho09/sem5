@@ -5,11 +5,12 @@ MOV DL , 05H ; count
 LEA SI , [2000H]
 loop: MOV AL, [SI] ; AL=current el
 SHL AL,01 ; shift left current element
-JNC J1 
+JNC J1 ; if no carry => +ve number 
 INR CL
 JMP J2
 J1: INR BL
-J2: DCR DL
+J2: INC SI
+DCR DL
 JNZ loop
 MOV [200A] , BL
 MOV [200B] , CL

@@ -4,8 +4,8 @@ LXI H, 1000H
 MOV C,M
 INX H
 MOV B,M
-MVI D,0000H
-MVI E ,0000H
+MVI D,0000H ; LSB
+MVI E ,0000H ; MSB
 loop: MOV A,D
 ADD C
 JNC skip
@@ -20,7 +20,7 @@ STA 1002H
 HLT
 ---
 
-; mULTIPLICATION USING SHIFTING MULTIPLICAND 
+; MULTIPLICATION USING SHIFTING MULTIPLICAND 
 
 LHLD 1000H
 MOV E,L
@@ -39,10 +39,23 @@ JNZ loop
 SHLD 1002H 
 HLT 
 
-
-
-
-
+----
+; without shifting multiplicand 
+  LHLD 1000H
+  MVI D,00H
+  MOV E,L
+  MOV A,H ; Multiplier 
+  LXI H ,0000H
+  MVI C ,08H
+  loop: DAD H
+  RAL
+  JNC skip
+  DAD D 
+  skip: DCR C
+  JNZ loop
+  SHLD 1002H
+  HLT
+  
 
 ; Initialize program
 LXI H, 2000H       ; Load address of multiplicand into HL register pair

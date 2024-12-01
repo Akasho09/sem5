@@ -52,7 +52,7 @@ MVI A,00  ; accumulator=0
 LXI D,00  ; 16 bit ANS=0
 LXI H, 0001H ; load HL with address 0001
 J1: MOV A,M ; loop load 0001 into accumulator
-CPI 0  ; compare accumlator to zero => if -ve => carry=1
+CPI 0  ; compare accumlator to zero => if 0>A ie -ve => carry=1
 JC J2  ;  jump if zero ie negative number
 ADD D ; Add D to Accumulator
 MOV D,A  ; move accumator data to DE register ie ans
@@ -63,3 +63,20 @@ MOV A,D ; move ans to accumulator
 STA 0020H ; store accumulator =sum 
 HLT
 
+----
+; 16 bit sum of n 8-bit nums
+LXI H , 1000H
+MOV C,M ;cOUNT 
+MOV B,00H ; MSB
+MOV A,00H ; LSB 
+loop: INX H 
+      ADD M 
+      JNC next 
+      INR B 
+next: DCR C 
+      JNZ loop 
+INX H 
+MOV M,A 
+INX H 
+MOV M,B 
+RST 5 

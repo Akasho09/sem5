@@ -45,10 +45,10 @@ The flag register is a special purpose register and it is completely different f
 It consists of 8 bits and only 5 of them are useful. The other three are left vacant and are used in the future Intel versions.
 { S(sign) | Z(zero) | - | AC(aux) | - | P(parity) | - | CY(carry) }
 carry => carry of last bit(d7).
-parity => no of ones upto last bit except last
+parity => no of ones upto last bit `except last`
 auxillary => carry of bit(d3)
 zero => It is set, when the operation performed in the ALU results in zero(all 8 bits are zero), otherwise it is reset. 
-It helps in determining if two numbers are equal or not
+It helps in determining if two numbers are equal or not.
 sign => If the sign flag is set, it means that number stored in the accumulator is negative, and if reset, then the number is positive.
 
 3. Memory Registers :

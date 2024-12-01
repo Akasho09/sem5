@@ -19,6 +19,34 @@ SKIP:  DCR C        ; decrement inner loop count
 
 ----
 
+start: MVI B,00H
+       LXI H , 1000H
+       MOV C , M ; COUNT 
+       DCR C ; dcr c , for optimization
+       INX H 
+innerloop: MOV A,M 
+           INX H 
+           CMP M ; if M>A => CARRY
+           JC next ; jmp on carry ie 2nd num > 1st
+           JZ next ; also jmp if num1=num2
+           MOV D,M ; swap|
+           MOV M,A 
+           DCX H
+           MOV M,D 
+           INX H 
+           MVI B,01H  ; if swapped => loop to start else sorted already
+next: DCR C 
+      JNZ innerloop  
+DCR B 
+JZ start 
+HLT    
+
+
+
+
+
+
+
 ; LXI H , 0015H
 ; MOV C,M ;  outer loop counter 
 ; DCR C
