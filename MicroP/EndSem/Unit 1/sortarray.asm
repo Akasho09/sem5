@@ -43,7 +43,30 @@ HLT
 
 
 
+--- OR
+; 10 ints at 2300 sorting 
 
+start:LXI H, 2300H
+      MOV C,M ; count 
+      DCR C
+      INX H
+      MVI B ,00H
+loop: MOV D,M ; 1st num
+      INX H
+      MOV A,M; 2nd num
+      CMP D
+      JNC skip  ; Compare 2n and first and jump only if no carry
+      MOV E, M
+      MOV M,D
+      DCX H
+      MOV M,E
+      INX H
+      MVI B,01H
+skip: DCR C
+      JNZ loop
+DCR B
+JZ start
+HLT
 
 
 

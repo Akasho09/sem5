@@ -95,6 +95,10 @@ Eg : STA 3000H
 
 # LDA 2000H
 
+fetch PC OPCODE
+read  PC+1 00
+read  PC+2 20
+read  2000 [accumulator]
 +3T for Memory Read  2000   [2000]   3TCC   Like in STA 3000H
 
 # SHLD 5140H
