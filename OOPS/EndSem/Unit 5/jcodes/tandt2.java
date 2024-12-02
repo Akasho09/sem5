@@ -5,10 +5,11 @@ class Myexception extends Exception {
     super(m) ;
   }      
 }
+
 public class tandt2 {
     public static void main  (String[] arg ) {
         Scanner s1 = new Scanner(System.in);
-        System.out.println("Enter Age :");
+        System.out.println("Enter Age : ");
         try {
             int age = s1.nextInt();
             if(age<18) {
