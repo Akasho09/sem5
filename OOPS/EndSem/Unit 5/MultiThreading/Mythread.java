@@ -1,5 +1,5 @@
 
-class Mythread extends Thread {
+class Mythread2 extends Thread {
     public void run() {
      int i=0;
      while(i<100){
@@ -8,7 +8,7 @@ class Mythread extends Thread {
      }
      }
      public static void main (String[] arg) {
-        Mythread t1 = new Mythread() ;
+        Mythread2 t1 = new Mythread2() ;
         t1.start();
         int i=0;
         while(i<100){

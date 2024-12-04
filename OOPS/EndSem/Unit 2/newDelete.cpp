@@ -23,4 +23,5 @@ int main () {
 Test* t1 = new Test () ;
 delete t1 ;
 return 0 ;
+
 }

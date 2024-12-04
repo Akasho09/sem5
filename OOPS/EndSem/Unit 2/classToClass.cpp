@@ -2,11 +2,12 @@
 using namespace std ;
 
 // DEFINE SEQUENTIALLY BOTH TIMES 
+class distanceFeet ; // define class at top 
 
 class distanceMetres{
-    int m;
+    double m;
 public :
-distanceMetres(int n){
+distanceMetres(double n){
 m=n;
 }
 
@@ -14,36 +15,45 @@ void display () {
     cout <<"Metres : " <<m <<endl;
 }
 
-int getM() {
+double getM() {
     return m;
 }
-// operator distanceFeet() {
-// distanceFeet f (m*3.2);
-// return f;
-// }
+operator distanceFeet();
 };
 
-
 class distanceFeet{
-    int f;
+    double f;
 public :
-distanceFeet(int e){
+distanceFeet(double e){
 f=e;
 }
 // copy 
-distanceFeet (distanceMetres &d){
-f=3.2*d.getM();
-}
+// distanceFeet (distanceMetres &d){
+// f=3.2*d.getM();
+// }
 void display () {
     cout <<"Feets : " <<f <<endl;
 }
 
+operator distanceMetres() {
+    distanceMetres d1 (f/3.28) ;
+    return d1 ;
+}
 };
+
+distanceMetres :: operator distanceFeet () {
+distanceFeet f (m*3.28);
+return f;
+}
+
+
 
 int main () {
 distanceMetres m1 = 10;
 distanceFeet f1=m1;
+distanceMetres m2 = f1 ;
 m1.display();
 f1.display();
+m2.display() ;
 
 }

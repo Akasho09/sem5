@@ -34,7 +34,7 @@ void display() {
 
 int main () {
 square s1 = 10 ; // basic to class 
-int side = s1; // class to basic 
+int side = s1; // class to basic
 rectangle r1 = s1 ; // class to class
 s1.display() ;
 r1.display() ;
