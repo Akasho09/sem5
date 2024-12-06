@@ -91,3 +91,6 @@ Physical	Bits	None	Hubs, Cables	NIC ↔ Physical medium
 Data Link	Frames	MAC Address	Switches, NICs	Node ↔ Node (same LAN)
 Network	Packets	IP Address	Routers	Source Network ↔ Destination Network
 Transport	Segments/Datagrams	Port Numbers	OS Software	Application ↔ Application
+
+
+![alt text](<Screenshot 2024-12-06 at 1.35.44 AM.png>)

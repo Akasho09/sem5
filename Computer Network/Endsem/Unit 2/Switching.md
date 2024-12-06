@@ -13,7 +13,7 @@ The switching process involves the following steps:
 - Frame Reception: The switch receives a data frame or packet from a computer connected to its ports.
 - MAC Address Extraction: The switch reads the header of the data frame and collects the destination MAC Address from it.
 - MAC Address Table Lookup: Once the switch has retrieved the MAC Address, it performs a lookup in its Switching table to find a port that leads to the MAC Address of the data frame.
-- Forwarding Decision and Switching Table Update: If the switch matches the destination MAC Address of the frame to the MAC address in its switching table, it forwards the data frame to the respective port. However, if the destination MAC Address does not exist in its forwarding table, it follows the flooding process, in which it sends the data frame to all its ports except the one it came from and records all the MAC Addresses to which the frame was delivered. This way, the switch finds the new MAC Address and updates its forwarding table.
+- Forwarding Decision and Switching Table Update: If the switch matches the destination MAC Address of the frame to the MAC address in its switching table, it forwards the data frame to the respective port. However, if the destination MAC Address does not exist in its forwarding table, it follows the `flooding process`, in which it sends the data frame to all its ports except the one it came from and records all the MAC Addresses to which the frame was delivered. This way, the switch finds the new MAC Address and updates its forwarding table.
 - Frame Transition: Once the destination port is found, the switch sends the data frame to that port and forwards it to its target computer/network
 
 # Message Switching: 
@@ -24,9 +24,11 @@ store and forward mechanism.
 
 # Circuit Switching:
 
-On Physical Layer.
+- On Physical Layer.
 
 In this type of switching, a connection is established between the source and destination beforehand. This connection receives the complete bandwidth of the network until the data is transferred completely.
+- In circuit switching, the resources need to be reserved during the setup phase;
+the resources remain dedicated for the entire duration of data transfer until the teardown phase.
 
 Total Time = SetupTime + TransmissionTime (Message/Bandwidth) + PropagationDelay(Distance/velocity) + TearDownTime(To free the resources)
 
@@ -46,6 +48,15 @@ In Datagram Packet switching, each data frame is taken as an individual entity a
 2. Virtual-Circuit Packet Switching: => On Data Link Layer
 
 In Virtual-Circuit Packet switching, a logical connection between the source and destination is made before transmitting any data. These logical connections are called virtual circuits. Each data frame follows these logical paths and provides a reliable way of transmitting data with less chance of data loss.
+
+## 
+In a three-stage switch, the total
+number of crosspoints is
+2kN + k(N/n)2
+which is much smaller than the number of
+crosspoints in a single-stage switch (N2).
+
+
 
 # ALOHA
 

@@ -1,11 +1,11 @@
 # Design a TST (Time-Space-Time) switch with 36 inputs and 36 outputs. Assume that 25% of the users are usually active at a time. Calculate minimum number of cross points needed in this scenario. Compare this scenario with the situation when only one cross bar switch is used for all input and output connections.
 Stage 1 - Time Switch (Input side):
 
-Each input can use up to 9 active time slots (since 25% users are active).
+<!-- Each input can use up to 9 active time slots (since 25% users are active).
 Each input switch connects 9 active slots to a space switch (instead of all 32 slots).
 Total crosspoints for Time Switches:
 
-𝑁
+ 𝑁
 ×
 9
 =
@@ -67,7 +67,7 @@ Crosspoints required for a single crossbar switch:
 1296
  
 crosspoints
-36×36=1296crosspoints
+36×36=1296crosspoints -->
 
 # In a TDM medium access control bus LAN, each station is assigned one time slot per cycle for transmission. Assume that the length of each time slot is the time to transmit 100 bits plus the end to end propagation delay. Assume a propagation speed of 2 * 10^8m/sec. The length of the LAN is 10 km with a bandwidth of 1 Mbps. Find the maximum number of stations that can be allowed in the LAN so that the throughput of each station can be 1/3 Mbps.
 
@@ -79,7 +79,7 @@ In a whole cycle each user transmit for 10us only
 Therefore efficiency is (100/150N)
 Throughput of each station (100/150N)*1 Mbps = 2/3N Mbps
 which is given as 1/3 Mbps = 2/3N => {N=2}
-
+https://www.youtube.com/watch?v=9A9uAJHHlHo
 # Station A needs to send a message of 12 packets to station B using a sliding window (window size 4) and Go- back-N error control strategy. All packets are ready and immediately available for transmission. If every 4th packet that A transmits get lost (but no acknowledgement form B ever get lost), then what is the number of packets that A will transmit for sending the message to B?
 
 Whole window gets discarded after 1 packet is lost = > But count them as being sent 
