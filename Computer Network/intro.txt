@@ -80,44 +80,55 @@
 is a conceptual framework used to understand and standardize the functions of a communication system or network.
 # 7 layers
 1. Application 
-a). provides interface btwen layers and applications.
-b). Protocols: HTTP, FTP, SMTP, DNS, etc.
+- provides user interface for sending data. 
+- The application generates the data that needs to be sent. 
+- It could be a file, message, or any application-specific data.
+- also provides diff protocols for file transfer like  HTTP(Fow wen acesses), 
+   FTP(for file transfer), or another application protocol.
 c). Key Components: Web browsers, email clients, file transfer software.
 
 2. Presentation.
-a). Translates data between the application layer and the network.
-b). it handles data encryption, decryption, compression, and conversion (e.g., character encoding, data format translation).
+- The presentation layer `formats`(there might be diff formats( ASCII or UNICODE etc) between sender and reciever) the data for the application layer. 
+- It handles encryption(if we want to send data encrypted ), compression, and translation of data formats if needed.
 c). Key Components: Data encryption, compression, data translation.
 
 3. Session
-a). Manages sessions between applications. 
-b). It establishes, maintains, and terminates connections between applications, handling session management and synchronization.
+- The session layer establishes, manages, and terminates connections between the two communicating hosts.
+- also adds checkpoints in data transfer.
+- It organizes and synchronizes the dialogue between the presentation layers of the sender and receiver.
 c). Key Components: Session management, authentication, authorization.
 
 4. Transport
-a). Ensures end-to-end communication, error recovery, and flow control.
-It segments and reassembles data, making sure it arrives in order and without errors.
-b). Data Unit: Segments (TCP) or Datagrams (UDP).
+- Protocol Used: TCP or UDP (assuming TCP for reliable data transfer).
+Functionality:
+- The transport layer is responsible for breaking the data into segments if it is too large for the network layer to handle.
+- It assigns the source port p1 and the destination port p2.(to identify which application is data send).
+- Each `segment` includes a header with source port, destination port, sequence number, and error-checking data.
+- TCP also handles flow control, error correction, and reassembly of the data at the destination.
+b). Data Unit: `Segments` (TCP) or `Datagrams` (UDP).
 c). also called 'end to end layer'
 d). protocols used i). TCP (TRANSMISSION CONTROL PROTOCOL) ii). UDP(USER DATAGRAM PROTOCOL).
 e). Key Components: Ports, TCP/UDP, flow control, error checking.
 {It assigns the source port p1 and the destination port p2. }
 
 5. Network
-a). Assigns IP address to devices .
-b). Data Unit: Packets.
+a). Assigns` IP address` to devices .
+b). Data Unit: `Packets`.
 c). Switching and Routing Techniques are used.
 d). adds source and destination to data packets .
 e). determines best path for travelling.
-{It encapsulates each transport layer segment into an IP packet. The packet header contains the source IP address IP1 and the destination IP address IP2.}
+{It encapsulates each transport layer segment into an IP packet. 
+The packet header contains the source IP address IP1 and the destination IP address IP2.}
 
 6. Data Link.
-a). Encodes & Decodes data packets sent by network layer called as frames & ensures no error in data packets.
+a). Encodes & Decodes data packets sent by network layer called as `frames` & ensures no error in data packets.
 b). uses 2 protocols i). HDLC(High level data link control). PPP (Point to point protocol).
-c). divided into 2 sub layers i). MAC (media acess control) --Manages protocol access to the physical network medium. ii). LLC (Logic link control).--Handles error checking and flow control.
+c). divided into 2 sub layers i). MAC (media acess control) --Manages protocol access to the physical network medium. 
+                              ii). LLC (Logic link control).--Handles error checking and flow control.
 d). Responsible for adding headers and trailers to these frames .
 e). Data Unit: Frames.
-{The frame includes the source physical address 15 and the physical address of the router (gateway) on the local network (obtained via ARP).}
+{The frame includes the source physical address 15 and the physical address of the router (gateway) 
+    on the local network (obtained via ARP).}
 
 7. Physical Layer
 a). Deals with the physical connection between devices and the transmission.

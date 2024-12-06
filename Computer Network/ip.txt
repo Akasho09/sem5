@@ -68,6 +68,8 @@ IP addresses belonging to class E are reserved for experimental and research pur
 The higher-order bits of the first octet of class E are always set to 1111.=>6.25%
 # address range = 240-255.
 
+![alt text](<Screenshot 2024-12-05 at 8.36.37 PM.png>)
+![alt text](<Screenshot 2024-12-05 at 8.36.32 PM.png>)
 
 
 "Classless Addressing":
@@ -76,7 +78,19 @@ Unlike classful addressing, which divides IP addresses into fixed classes (A, B,
 This means that networks can be divided into smaller, more flexible subnets according to their specific needs, rather than being constrained by predefined class boundaries.
 Notation : ip address / |network id|
 e.g 192.10.11.12/25 => 25 bits are network id and 7 bits are host id.
+1. The addresses in a block must be contiguous.
+2. The number of addresses in a block must be power of 2
+(1,2,4,8..).
+3. The first address must be evenly divisible by thenumber of addresses.
+- The first address in the block can be found by setting the rightmost 32 − n bits to 0s.
+- The last address in the block can bE found by setting the rightmost 32 − n bits to 1s.
+- The number of addresses in the block can be found by using the formula 2^32−n.
+- using Mask
+ - first => AND Of mask and any address 
+ -  last => OR of complement of mask and any adrdress
+ -  number => compklement of MASK + 1. 
 
+ # Each address in the block can be considered as a two-level hierarchical structure: the leftmost n bits (prefix) define the network; the rightmost 32 − n bits define the host.
 "subnetting":
 When a bigger network is divided into smaller networks, 
 to maintain security, then that is known as Subnetting. So, maintenance is easier for smaller networks.
