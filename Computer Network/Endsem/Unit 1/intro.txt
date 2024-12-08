@@ -83,8 +83,7 @@ is a conceptual framework used to understand and standardize the functions of a 
 - provides user interface for sending data. 
 - The application generates the data that needs to be sent. 
 - It could be a file, message, or any application-specific data.
-- also provides diff protocols for file transfer like  HTTP(Fow wen acesses), 
-   FTP(for file transfer), or another application protocol.
+- also provides diff protocols for file transfer like  HTTP(Fow web acesses), FTP(for file transfer), or another application protocol.
 c). Key Components: Web browsers, email clients, file transfer software.
 
 2. Presentation.
