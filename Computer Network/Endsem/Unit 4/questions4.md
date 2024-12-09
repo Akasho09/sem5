@@ -71,7 +71,8 @@ Time taken to deliver the packet to node B
 = 12.6 ms
 > Thus, At time t = 25 ms + 12.6 ms = 37.6 ms, the packet is delivered to node B
 
-## Each Station Throughput  = 500/5000 = 100bit/sec therefore for N station = N * 100 bits / sec Throughput of slotted aloha = .368 * 100Kbps Therefore .368*100*10^3 = N*100 N= 368
+## Each Station Throughput  = 500/5000 = 100bit/sec 
+therefore for N station = N * 100 bits / sec Throughput of slotted aloha = .368 * 100Kbps Therefore .368*100*10^3 = N*100 N= 368
 
 Each Station Throughput  = 500/5000 = 100bit/sec
 therefore for N station = N * 100 bits / sec

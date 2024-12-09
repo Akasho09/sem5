@@ -19,15 +19,7 @@ they arrive at the destination.
 
 
 
-## Question:Consider a packet of length 1,500 bytes, which begins at end system A and travels over three links to a destination end system. These links are connected by two packet switches. The propagation speed on all the links is 
-2.5
-×
-1
-0
-8
-2.5×10 
-8
-  m/s, and the transmission rates of all three links are 2 Mbps. The packet switch processing delay is 3 ms. The lengths of the links are:
+## Question:Consider a packet of length 1,500 bytes, which begins at end system A and travels over three links to a destination end system. These links are connected by two packet switches. The propagation speed on all the links is  2.5 × 1 0 8 2.5×10  m/s, and the transmission rates of all three links are 2 Mbps. The packet switch processing delay is 3 ms. lengths of the links are:
 
 First link: 5,000 km
 Second link: 4,000 km
