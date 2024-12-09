@@ -143,10 +143,9 @@ g). Determines bit rate.
 # 5 layers
 1. Application- (1,2,3 merged into 1).
 2. Transport.
-3. Network.
-4. Data Link
-5. Physical Layer
-
+3. Internet Layer 
+4. Network acesses layer
+/Users/akashmalik/Desktop/Screenshot 2024-12-09 at 9.57.19 PM.png
 
 'Bit Rate'
 Bit rate is the transmission of a number of bits per second. 

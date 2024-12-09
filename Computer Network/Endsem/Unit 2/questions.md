@@ -19,8 +19,7 @@ they arrive at the destination.
 
 
 
-## Question:
-Consider a packet of length 1,500 bytes, which begins at end system A and travels over three links to a destination end system. These links are connected by two packet switches. The propagation speed on all the links is 
+## Question:Consider a packet of length 1,500 bytes, which begins at end system A and travels over three links to a destination end system. These links are connected by two packet switches. The propagation speed on all the links is 
 2.5
 ×
 1
@@ -35,8 +34,9 @@ Second link: 4,000 km
 Third link: 1,000 km
 
 hree links are connected by two packet switches 
-
-2 times dpoc will be added i.e 3msec*2 = 0.006 sec
+ ![alt text](image.png)
+ ![alt text](image-1.png)
+> 2 times dpoc will be added i.e 3msec*2 = 0.006 sec
 
 Tt = L/R = 1500 bytes/ 2Mbps = 0.006 sec
 
@@ -63,12 +63,13 @@ Propagation delay for each link
 Switch processing delay
 
 ## Differences Between Packet Switching (Connection-Oriented) and Circuit Switching
-Aspect	Packet Switching (Connection-Oriented)	Circuit Switching
-Connection Setup	Logical connection established at the start, but no dedicated physical path.	Dedicated physical path is established before data transfer.
-Resource Allocation	Resources are shared among multiple users; no single path is reserved.	Resources are reserved for the duration of the connection.
-Efficiency	High efficiency; network bandwidth is utilized dynamically by multiple connections.	Inefficient; resources remain idle if no data is transmitted.
-Data Transmission	Data is sent in packets; packets may take different routes but are reassembled at the destination.	Data is sent as a continuous stream along the reserved path.
-Reliability	Uses acknowledgments and retransmissions for reliability.	Reliability is inherent due to the dedicated path.
-Flexibility	Highly flexible; supports dynamic routing.	Limited flexibility; fixed route cannot adapt to failures easily.
-Cost	Lower cost; no need to maintain dedicated links.	Higher cost due to resource reservation.
-Examples	TCP/IP, VoIP (Voice over IP), HTTP.	Traditional telephone networks.
+| **Aspect**              | **Packet Switching (Connection-Oriented)**                                    | **Circuit Switching**                                  |
+|-------------------------|-------------------------------------------------------------------------------|------------------------------------------------------|
+| **Connection Setup**    | Logical connection established at the start, but no dedicated physical path. | Dedicated physical path is established before data transfer. |
+| **Resource Allocation** | Resources are shared among multiple users; no single path is reserved.       | Resources are reserved for the duration of the connection. |
+| **Efficiency**          | High efficiency; network bandwidth is utilized dynamically by multiple connections. | Inefficient; resources remain idle if no data is transmitted. |
+| **Data Transmission**   | Data is sent in packets; packets may take different routes but are reassembled at the destination. | Data is sent as a continuous stream along the reserved path. |
+| **Reliability**         | Uses acknowledgments and retransmissions for reliability.                    | Reliability is inherent due to the dedicated path. |
+| **Flexibility**         | Highly flexible; supports dynamic routing.                                   | Limited flexibility; fixed route cannot adapt to failures easily. |
+| **Cost**                | Lower cost; no need to maintain dedicated links.                             | Higher cost due to resource reservation. |
+| **Examples**            | TCP/IP, VoIP (Voice over IP), HTTP.                                          | Traditional telephone networks. |

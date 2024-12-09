@@ -86,11 +86,10 @@ This layer ensures reliable data transfer (TCP) or faster, connectionless commun
 
 
 Summary Table
-Layer	Data Unit	Addressing Scheme	Device Used	Delivery
-Physical	Bits	None	Hubs, Cables	NIC ↔ Physical medium
-Data Link	Frames	MAC Address	Switches, NICs	Node ↔ Node (same LAN)
-Network	Packets	IP Address	Routers	Source Network ↔ Destination Network
-Transport	Segments/Datagrams	Port Numbers	OS Software	Application ↔ Application
-
+Layer	        Data Unit	        Addressing Scheme	        Device Used	Delivery
+Physical	    Bits	            None	Hubs, Cables	    NIC ↔ Physical medium
+Data Link   	Frames	            MAC Address	Switches, NICs	Node ↔ Node (same LAN)
+Network	        Packets	            IP Address	Routers	Source  Network ↔ Destination Network
+Transport   	Segments/Datagrams	 Port Numbers OS Software 	Application ↔ Application
 
 ![alt text](<Screenshot 2024-12-06 at 1.35.44 AM.png>)
