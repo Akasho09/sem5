@@ -42,6 +42,7 @@ void sell() {
        ( "Latitude :" + Property::getLat() )
        });
 }
+void print() {}; 
 };
 
 class Hotel : public Property{
@@ -67,6 +68,8 @@ void sell() {
        ( "Latitude :" + Property::getLat() )
        });
 }
+void print() {}; 
+
 };
 
 class Park : public Property{
@@ -93,6 +96,8 @@ void sell() {
        ( "Latitude :" + Property::getLat() )
        });
 }
+void print() {}; 
+
 };
 
 
