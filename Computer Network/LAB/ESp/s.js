@@ -3,7 +3,6 @@ const net = require('net');
 Write a socket program where the server sends a word/number to the client and the client 
 checks whether it is a palindrome or not. Draw appropriate flowcharts along with pseudocodes.
 */
-
 const server = net.createServer((socket)=>{
     console.log("Server created ")
 
